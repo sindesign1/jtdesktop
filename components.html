@@ -9,8 +9,103 @@
         <script src="//use.typekit.net/xxx2qsl.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
     </head>
-    <body class="melonBackground" id="loadContainer">
-        <!-- <div id="chooseCentrePage">
+    <body class="melonBackground">
+        <!-- Login Page -->
+        <div id="loginPage">
+            <div class="row margin-t-200">
+                <div class="large-12 columns headingText" id="heading">
+                    <h1>JourneyTree</h1>
+                    <!-- Error Details -->
+                    <div id="errorText" style="display:none;">
+                        <h2>Oops! You're barking up the wrong tree.</h2>
+                        <h6>Your username or password is incorrect.</h6>
+                    </div>
+                    <!-- End Error Details -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="loginContainer">
+                        <div class="email">
+                            <input type="email" name="emailLogin" class="loginInput" placeholder="email address" />
+                        </div>
+                        <div class="password">
+                            <input type="password" name="passwordLogin" class="loginInput" placeholder="password" />
+                        </div>
+                        <div class="loginBtn" id="loginBtn">
+                            <button type="submit" name="loginSubmit">login</button>
+                        </div>
+                        <div class="forgotPassword" id="forgotPassword">
+                            <p>forgot your password?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Login Page -->
+        <!-- Retrieve Login Page -->
+        <div id="retrievePage">
+            <div class="row margin-t-200 headingText">
+                <div class="large-12 columns">
+                    <h1>JourneyTree</h1>
+                    <h2>Don't worry, this happens from time to time.</h2>
+                    <h6>Enter your email to retrieve your password.</h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="retrieveContainer">
+                        <div class="email">
+                            <input type="email" name="emailLogin" class="loginInput" placeholder="email address" />
+                        </div>
+                        <div class="loginBtn">
+                            <button type="submit" name="loginSubmit">retrieve</button>
+                        </div>
+                        <div class="forgotPassword" id="switchLogin">
+                            <p>oops! I want to login</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Retrieve Login Page -->
+        <!-- Account Locked Page -->
+        <div class="lockedPage">
+            <div class="row margin-t-200 headingText">
+                <div class="large-12 columns">
+                    <h1>JourneyTree</h1>
+                    <h2>Sorry, your account is temporarily locked.</h2>
+                    <h6>Check your email to reactivate your account.</h6>
+                </div>
+            </div>
+        </div>
+        <!-- End Account Locked Page -->
+        <!-- What Person Page -->
+        <div id="whatPersonPage">
+            <div class="row margin-t-200">
+                <div class="large-12 columns">
+                    <h1>JourneyTree</h1>
+                    <h2>What tree do you want to climb today?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="circleIcon">
+                        <span class="personIcon">w</span>
+                        <p>staff</p>
+                    </div>
+                    <div class="circleIcon">
+                        <span class="personIcon">l</span>
+                        <p>parent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End What Person Page -->
+        <!-- Choose Centre Page -->
+        <div id="chooseCentrePage">
             <div class="row margin-t-185">
                 <div class="large-12 columns">
                     <h2>Select which Learning Centre you're at today.</h2>
@@ -18,9 +113,10 @@
             </div>
             <div class="row">
                 <div class="large-12 columns">
-                    <ul class="accordion" data-accordion>
-                        <li class="accordion-navigation">
-                            <a href="#panel1a">
+                    <dl id="chooseCentreAccordion" class="centreAccordion">
+                        <!-- <dd class="accordion-navigation"> -->
+                            <dt class="accordionPanel">
+                              <a href="">
                                 <div class="logoCircle">
                                     <img src="img/iconWhirlybirds.png" />
                                 </div>
@@ -28,8 +124,9 @@
                                     <div class="centreHeading">Whirlybirds Learning Centre</div>
                                     <div class="selectRoom">Select your room</div>
                                 </div>
-                            </a>
-                            <div id="panel1a" class="content">
+                              </a>
+                            </dt>
+                            <dd class="centreList" style="display:none;">
                                 <div class="accordionList">Bunnies Room</div>
                                 <div class="accordionList">Bunnies Room</div>
                                 <div class="accordionList">Bunnies Room</div>
@@ -46,12 +143,17 @@
                                 <div class="accordionList">Bunnies Room</div>
                                 <div class="accordionList">Bunnies Room</div>
                                 <div class="accordionList">Bunnies Room</div>
-                            </div>
-                        </li>
-                    </ul>
+                            </dd>
+                        <!-- </dd> -->
+                    </dl>
+                    <div class="switchBtn" id="switchAccountsBtn">
+                        <button>switch accounts</button>
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </div>
+        <!-- End Choose Centre Page -->
+
     
     <!-- <div class="row">
       <div class="large-12 columns">

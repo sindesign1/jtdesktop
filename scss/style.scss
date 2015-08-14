@@ -1,0 +1,530 @@
+/* Stylesheet for JT Desktop version */
+
+/* ---------- Variables ---------- */
+
+/* Main colours - refer to style guide for names and colours */
+$dark-melon: #983333;
+$deep-melon: #D0504D;
+$melon: #F16259;
+$tone-melon: #F2716C;
+$tint-melon: #F3817B;
+$light-melon: #E9A8A4;
+$pale-melon: #FCDCDB;
+$grey40: #282828;
+$grey80: #505050;
+$grey120: #787878;
+$grey160: #A0A0A0;
+$grey200: #C8C8C8;
+$grey220: #DCDCDC;
+$grey240: #F0F0F0;
+$grey249: #F9F9F9;
+$dark-green: #58794E;
+$deep-green: #809A68;
+$green: #7D892E;
+$tint-green: #BBD483;
+$hue-green: #D1E0AB;
+$light-green: #8CB592;
+$pale-green: #BDDBBF;
+$white: #FFF;
+
+/* Header Title in top melon bar */
+$top-title:28px;
+$profile-title:26px;
+
+/* Heading font size gradations */
+$big-text: 44px;
+$h1-size: 60px;
+$h2-size: 43px;
+$h3-size: 25px;
+$h4-size: 20px;
+$h5-size: 16px;
+$h6-size: 14px;
+
+$h6Size: 14px;
+$pSize: 16px;
+
+/* Font Families */
+$museo: 'museo', serif;
+$museo100: 'museo100', serif;
+$myriad: 'myriad-pro', sans-serif;
+
+/* Font Weight */
+
+
+/* Icons */
+$iconfont: jt-icons;
+
+/* ---------- End Variables ---------- */
+/* ---------- Global Styling ---------- */
+
+@font-face {
+  font-family: "jt-icons";
+  src:url("../fonts/jt-iconfont.eot");
+  src:url("../fonts/jt-iconfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/jt-iconfont.woff") format("woff"),
+    url("../fonts/jt-iconfont.ttf") format("truetype"),
+    url("../fonts/jt-iconfont.svg#jt-iconfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "museo100";
+  src:url("../fonts/museo100-regular-webfont.eot");
+  src:url("../fonts/museo100-regular-webfont?#iefix") format("embedded-opentype"),
+    url("../fonts/museo100-regular-webfont.woff") format("woff"),
+    url("../fonts/museo100-regular-webfont.ttf") format("truetype"),
+    url("../fonts/museo100-regular-webfont.svg#museo100-regular-webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: $myriad;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+}
+
+h1, h2, h3 {
+	font-family: $museo;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 70px;
+	color: $white;
+}
+
+h2 {
+	font-size: 25px;
+	font-family: $museo100;
+	color: $white;
+}
+
+h6 {
+	font-size: 20px;
+	font-family: $myriad;
+	color: $white;
+	font-weight: lighter;
+}
+
+.margin-t-185 {
+	margin-top: 185px;
+}
+
+.margin-t-200 {
+	margin-top: 200px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-input-placeholder {
+	color: $white;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: $white;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: $white;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+}
+
+:-ms-input-placeholder {  
+	color: $white;
+	font-weight: lighter;
+	letter-spacing: 0.5px;
+}
+
+/* ---------- End Global Styling ---------- */
+/* ---------- Other Styling ---------- */
+
+.melonBackground {
+	background: $melon url('../img/loginBackground.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	text-align: center;
+}
+
+.headingText {
+	height: 189px;
+}
+
+.loginContainer, .retrieveContainer {
+	width: 44%;
+	margin: 0 auto;
+	padding-top: 10px;
+
+	input {
+		height: 50px;
+		border-radius: 4px;
+		border: none;
+		background: rgba(255,255,255,0.3);
+		color: $white;
+		font-size: 20px;
+		padding: 0 70px;
+		line-height: 21px;
+		font-weight: lighter;
+
+		&:focus {
+			background: rgba(255,255,255,0.3);
+		}
+	}
+
+	.loginBtn {
+		margin-top: 60px;
+
+		button {
+			background: transparent;
+			border: 2px solid $dark-melon;
+			border-radius: 40px;
+			width: 260px;
+			color: $dark-melon;
+			font-family: myriad-pro;
+			font-size: 20px;
+			font-weight: normal;
+			padding: 11px 0;
+
+			&:hover {
+				background: $dark-melon;
+				color: $white;
+			}
+
+			&:focus {
+				background: $dark-melon;
+				color: $white;
+			}
+
+			&:active {
+				background: $dark-melon;
+				color: $white;
+			}
+		}
+	}
+
+	.forgotPassword {
+
+		p {
+			font-size: 17px;
+			color: $dark-melon;
+			cursor: pointer;
+			font-weight: lighter;
+
+			&:hover {
+				font-weight: bold;
+			}
+
+			&:focus {
+				font-weight: bold;
+			}
+
+			&:active {
+				font-weight: bold;
+			}
+		}
+
+	}
+}
+
+.email {
+
+	position: relative;
+
+	input[type="email"] {
+		position: relative;
+	}
+
+	&:before {
+		content: '5';
+		font-family: $iconfont;
+		position: absolute;
+	    font-size: 35px;
+	    color: white;
+	    left: 15px;
+	    font-weight: normal;
+	    z-index: 2;
+	}
+
+}
+
+.password {
+
+	position: relative;
+
+	input[type="password"] {
+		position: relative;
+	}
+
+	&:before {
+		content: '4';
+		font-family: $iconfont;
+		position: absolute;
+	    font-size: 38px;
+	    color: white;
+	    left: 15px;
+	    font-weight: normal;
+	    z-index: 2;
+	}
+
+}
+
+.retrieveContainer {
+	padding-top: 10px;
+
+	input {
+		margin-bottom: 126px;
+	}
+
+}
+
+.errorStyle {
+	width: 44%;
+	margin: 0 auto;
+	padding-top: 10px;
+
+	input {
+		height: 50px;
+		border-radius: 4px;
+		border: none;
+		background: rgba(255,255,255,0.3);
+		color: $deep-melon;
+		font-size: 20px;
+		padding: 0 70px;
+		line-height: 21px;
+		font-weight: lighter;
+		border: 2px solid $deep-melon;
+
+		&:focus {
+			background: rgba(255,255,255,0.3);
+		}
+	}
+}
+
+.errorEmail {
+
+	position: relative;
+
+	input[type="email"] {
+		position: relative;
+	}
+
+	&:before {
+		content: '5';
+		font-family: $iconfont;
+		position: absolute;
+	    font-size: 35px;
+	    color: $deep-melon;
+	    left: 15px;
+	    font-weight: normal;
+	    z-index: 2;
+	}
+
+}
+
+.errorPassword {
+
+	position: relative;
+
+	input[type="password"] {
+		position: relative;
+	}
+
+	&:before {
+		content: '4';
+		font-family: $iconfont;
+		position: absolute;
+	    font-size: 38px;
+	    color: $deep-melon;
+	    left: 15px;
+	    font-weight: normal;
+	    z-index: 2;
+	}
+
+}
+
+#whatPersonPage {
+
+	.circleIcon {
+		background: rgba(255,255,255,0.7);
+		border-radius: 60px;
+		height: 75px;
+		width: 75px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: 40px;
+		color: $white;
+		cursor: pointer;
+		-webkit-transition: all 500ms ease 100ms;
+    	-moz-transition: all 500ms ease 100ms;
+    	-o-transition: all 500ms ease 100ms;
+    	transition: all 500ms ease 100ms;
+
+		&:first-child {
+			margin-right: 70px;
+		}
+
+		&:hover {
+			background: $dark-melon;
+			color: $dark-melon;
+		}
+
+		&:active {
+			background: $dark-melon;
+			color: $dark-melon;
+		}
+
+		&:focus {
+			background: $dark-melon;
+			color: $dark-melon;
+		}
+
+		p {
+			font-family: $myriad;
+			font-size: 20px;
+		}
+	}
+
+	.personIcon {
+		font-family: $iconfont;
+		color: $melon;
+		font-size: 72px;
+		line-height: 83px;
+	}
+
+}
+
+#chooseCentrePage {
+	.accordionPanel {
+		width: 587.5px;
+		margin: 20px auto 0 auto;
+		text-align: left;
+		background: $white;
+		padding: 10px 0;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.logoCircle {
+		display: inline-block;
+		vertical-align: middle;
+		width: 75px;
+		height: 75px;
+		border: 2px solid $melon;
+		border-radius: 60px;
+		padding: 5px;
+		margin-left: 40px;
+
+		img {
+			width: 80%;
+			height: 80%;
+			margin-top: 6px;
+			margin-left: 5px;
+		}
+	}
+
+	.centreText {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 40px;
+
+		.centreHeading {
+			font-family: $myriad;
+			font-size: 20px;
+			color: $melon;
+			font-weight: 500;
+		}
+
+		.selectRoom {
+			font-family: $myriad;
+			font-size: 17px;
+			color: #9f9f9e;
+		}
+	}
+
+	.centreList {
+		background: #fbdbda;
+		width: 587.5px;
+		margin: -2px auto 0 auto;
+		text-align: left;
+		height: 289px;
+		overflow-y: auto;
+	}
+
+	.accordionList {
+		padding: 10px 5px 10px 159px;
+		color: $grey40;
+		font-size: 17px;
+		border-bottom: 1px solid $melon;
+		cursor: pointer;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:hover {
+			background: $melon;
+			color: $white;
+		}
+
+		&:active {
+			background: $melon;
+			color: $white;
+		}
+
+		&:focus {
+			background: $melon;
+			color: $white;
+		}
+	}
+
+	.switchBtn {
+		margin-top: 60px;
+
+		button {
+			background: transparent;
+			border: 2px solid $dark-melon;
+			border-radius: 40px;
+			width: 260px;
+			color: $dark-melon;
+			font-family: myriad-pro;
+			font-size: 20px;
+			font-weight: normal;
+			padding: 11px 0;
+
+			&:hover {
+				background: $dark-melon;
+				color: $white;
+			}
+
+			&:focus {
+				background: $dark-melon;
+				color: $white;
+			}
+
+			&:active {
+				background: $dark-melon;
+				color: $white;
+			}
+		}
+	}
+}
+
+
+
+/* ---------- End Other Styling ---------- */
