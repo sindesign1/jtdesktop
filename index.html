@@ -9,49 +9,273 @@
         <script src="//use.typekit.net/xxx2qsl.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
     </head>
-    <body class="melonBackground" id="loadContainer">
-        <!-- <div id="chooseCentrePage">
-            <div class="row margin-t-185">
-                <div class="large-12 columns">
-                    <h2>Select which Learning Centre you're at today.</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-12 columns">
-                    <ul class="accordion" data-accordion>
-                        <li class="accordion-navigation">
-                            <a href="#panel1a">
-                                <div class="logoCircle">
-                                    <img src="img/iconWhirlybirds.png" />
+    <body id="loadContainer" class="greyBackground">
+        <div id="mainTemplate">
+            <div id="blur">
+                <div class="header">
+                    <div class="row">
+                        <div class="small-9 columns" style="margin-top:6px;">
+                            <h3>JourneyTree</h3>
+                        </div>
+                        <div class="small-3 columns" style="text-align:right;margin-top:4px;padding: 0;">
+                            <span class="topIcons">
+                                <div class="icon">1</div>
+                                <div class="topIconText">tree</div>
+                            </span>
+                            <span class="topIcons">
+                                <div class="icon">i</div>
+                                <div class="topIconText">messages</div>
+                            </span>
+                            <form class="searchBar">
+                                <input type="text" class="searchInput" placeholder="search" />
+                            </form>
+                            <span class="topIcons">
+                                <div class="icon" id="searchBtn">3</div>
+                            </span>
+
+                            <span class="topProfile" id="profileBtn">
+                                <div class="profilePicture">
+                                    <img src="img/hannah.jpg" />
                                 </div>
-                                <div class="centreText">
-                                    <div class="centreHeading">Whirlybirds Learning Centre</div>
-                                    <div class="selectRoom">Select your room</div>
+                            </span>
+                            <div class="profileDropDown">
+                                <div id="profileBtn">
+                                    <div class="profilePicture">
+                                        <img src="img/hannah.jpg" />
+                                    </div>
+                                    <div class="profileText">
+                                        <div class="personName">Miss Hannah</div>
+                                        <div class="personEmail">hannah@email.com</div>
+                                    </div>
                                 </div>
-                            </a>
-                            <div id="panel1a" class="content">
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
-                                <div class="accordionList">Bunnies Room</div>
+                                <div class="logout">
+                                    <button type="button" class="logoutBtn">logout</button>
+                                </div>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-t-20 relative">
+                    <div class="large-9 columns main" id="mainContainer">
+                        <div id="tree">
+                            <div class="postContainer" id="postBtn">
+                                <div class="staffImg">
+                                    <img src="img/hannah.jpg" />
+                                </div>
+                                <div class="post">want to add something to the tree?</div>
+                                <div class="plusIcon">?</div>
+                            </div>
+                            <div class="feedItem">
+                                <div class="postedBy">
+                                    <div class="postedByImg">
+                                        <img src="img/hannah.jpg" />
+                                    </div>
+                                    <div class="postedByText">
+                                        <span class="postMelonText">Miss Hannah</span>
+                                        <span>shared a</span>
+                                        <span class="postMelonText">photo</span>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <img src="img/feedImg.png" />
+                                </div>
+                                <div class="postInfo">
+                                    <div class="tags">5 TAGS</div>
+                                    <div class="time"><span class="bold">Today</span> 11:30am</div>
+                                </div>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="feedItem">
+                                <div class="postedBy">
+                                    <div class="postedByImg">
+                                        <img src="img/hannah.jpg" />
+                                    </div>
+                                    <div class="postedByText">
+                                        <span class="postMelonText">Miss Hannah</span>
+                                        <span>shared a</span>
+                                        <span class="postMelonText">post</span>
+                                    </div>
+                                </div>
+                                <div class="postItem">
+                                    <span>Don’t forget to bring any old blankets as it’s Animal Welfare Day this Friday and we are collecting donations. Don’t forget to bring any old blankets as it’s Animal Welfare Day this Friday and we are collecting donations. Don’t forget to bring any old blankets as it’s Animal Welfare Day this Friday and we are collecting donations. Thank you.</span>
+                                </div>
+                                <div class="postInfo">
+                                    <div class="tags">3 TAGS</div>
+                                    <div class="time"><span class="bold">Today</span> 1:00pm</div>
+                                </div>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="feedItem">
+                                <div class="postedBy">
+                                    <div class="postedByImg">
+                                        <img src="img/hannah.jpg" />
+                                    </div>
+                                    <div class="postedByText">
+                                        <span class="postMelonText">Miss Hannah</span>
+                                        <span>shared a</span>
+                                        <span class="postMelonText">Learning Story</span>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <img src="img/feedImg.png" />
+                                    <div class="storyFeedTitle">Today I painted my family!</div>
+                                </div>
+                                <div class="postInfo">
+                                    <div class="tags">1 TAGS</div>
+                                    <div class="tags" style="margin: 0 5px;">|</div>
+                                    <div class="tags">4 FEEDBACK</div>
+                                    <div class="time"><span class="bold">Yesterday</span> 11:30am</div>
+                                </div>
+                                <div class="divider"></div>
+                            </div>
+                            <div class="feedItem">
+                                <div class="postedBy">
+                                    <div class="postedByImg">
+                                        <img src="img/hannah.jpg" />
+                                    </div>
+                                    <div class="postedByText">
+                                        <span class="postMelonText">Miss Hannah</span>
+                                        <span>shared a</span>
+                                        <span class="postMelonText">Learning Story</span>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <img src="img/feedImg.png" />
+                                </div>
+                                <div class="moreImages">
+                                    <div class="smallThumbnail">
+                                        <img src="img/feedImg.png" />
+                                    </div>
+                                    <div class="smallThumbnail">
+                                        <img src="img/feedImg.png" />
+                                    </div>
+                                    <div class="smallThumbnail">
+                                        <img src="img/feedImg.png" />
+                                    </div>
+                                    <div class="smallThumbnail">
+                                        <img src="img/feedImg.png" />
+                                    </div>
+                                </div>
+                                <div class="postInfo">
+                                    <div class="tags">1 TAGS</div>
+                                    <div class="tags" style="margin: 0 5px;">|</div>
+                                    <div class="tags">4 FEEDBACK</div>
+                                    <div class="time"><span class="bold">Yesterday</span> 11:30am</div>
+                                </div>
+                                <div class="divider"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="large-3 columns sidebar">
+                        <ul id="mainMenu">
+                            <li>
+                                <div class="sidebarIcon">1</div>
+                                <div class="sidebarText">tree</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">i</div>
+                                <div class="sidebarText">messages</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">}</div>
+                                <div class="sidebarText">children</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">h</div>
+                                <div class="sidebarText">images</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">@</div>
+                                <div class="sidebarText">albums</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">x</div>
+                                <div class="sidebarText">stories</div>
+                            </li>
+                            <div class="divider"></div>
+                            <li>
+                                <div class="sidebarIcon">~</div>
+                                <div class="sidebarText">locations</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">g</div>
+                                <div class="sidebarText">help</div>
+                            </li>
+                        </ul>
+                        <ul id="editMenu" style="display:none;">
+                            <li>
+                                <div class="sidebarIcon">2</div>
+                                <div class="sidebarText">post</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">e</div>
+                                <div class="sidebarText">favourite</div>
+                            </li>
+                            <li>
+                                <div class="sidebarIcon">[</div>
+                                <div class="sidebarText">albums</div>
+                            </li>
+                            <li id="deleteBtn">
+                                <div class="sidebarIcon">a</div>
+                                <div class="sidebarText">delete</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div> -->
+            <!-- Edit Profile Img Modal -->
+            <!-- <div class="modal" id="editProfileImgModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <div class="dialogText">To change your profile picture log into your account at app.journeytree.com.au</div>
+                            <div class="dialogCloseBtn" id="closeEditProfileImgModal">?</div>
+                        </div>
+                        <button type="button" id="modalDoneBtn">ok</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Profile Img Modal -->
+            <!-- Edit Album Title Modal -->
+            <!-- <div class="modal" id="editAlbumTitleModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <div class="dialogText">Edit Album Name</div>
+                            <div class="dialogCloseBtn" id="closeEditAlbumTitleModal">?</div>
+                        </div>
+                        <input type="text" class="dialogInput" id="albumTitleInput" />
+                        <button type="button" id="saveAlbumTitleBtn">save</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Edit Album Title Modal -->
+            <!-- Edit Profile Img Modal -->
+            <!-- <div class="modal" id="editProfileImgModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <div class="dialogText messageDialogText">To change your profile picture log into your account at app.journeytree.com.au</div>
+                            <div class="dialogCloseBtn messageDialogCloseBtn" id="closeEditProfileImgModal">?</div>
+                        </div>
+                        <button type="button" id="editProfileImgBtn" class="messageBtn">ok</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Edit Profile Img Modal -->
+            <!-- Edit Email Modal -->
+            <!-- <div class="modal" id="emailInfoModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                            <div class="dialogText messageDialogText">To change your email address log into your account at app.journeytree.com.au</div>
+                            <div class="dialogCloseBtn messageDialogCloseBtn" id="closeEmailInfoModal">?</div>
+                        </div>
+                        <button type="button" id="emailInfoModalBtn" class="messageBtn">ok</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Edit Email Modal -->
+        </div>
     
     <!-- <div class="row">
       <div class="large-12 columns">

@@ -5,7 +5,10 @@ var Effects = {
 	},
 
 	events: function() {
-		$('body').on ('click touch', '.centreAccordion > dt', Effects.accordion);
+		$('body').on('click touch', '.centreAccordion > dt', Effects.accordion);
+		$('body').on('click touch', '#searchBtn', Effects.openSearchBar);
+		$('body').on('click touch', '#profileBtn', Effects.openProfileDropdown);
+		$('html').on('click touch', 'body', Effects.hideEffects);
 	},
 
 	accordion: function() {
@@ -24,7 +27,43 @@ var Effects = {
 
 	},
 
+	openSearchBar: function(e) {
+		var $searchBar = $('.searchBar');
+		var $input = $('.searchInput');
 
+		e.stopPropagation();
+
+		if($searchBar.hasClass('open')) {
+			$input.animate({margin: "0px", padding: "0px"}, 500);
+			$searchBar.animate({width: "0px"}, 500).removeClass('open');
+		} else {
+			$input.animate({margin: "0px", padding: "7px"}, 500);
+			$searchBar.animate({width:"230px"}, 500).addClass('open');
+		}
+	},
+
+	openProfileDropdown: function(e) {
+		var $dropdown = $('.profileDropDown');
+
+		e.stopPropagation();
+
+		$dropdown.slideToggle();
+	},
+
+	hideEffects: function() {
+		var $dropdown = $('.profileDropDown');
+		var $searchBar = $('.searchBar');
+		var $input = $('.searchInput');
+
+		$input.animate({margin: "0px", padding: "0px"}, 500);
+		$searchBar.animate({width: "0px"}, 500).removeClass('open');
+
+		$dropdown.slideUp();
+	},
+
+	removeMenuClass: function() {
+		$('.sidebar ul li').removeClass();
+	}
 }
 
 $(document).ready(function() {

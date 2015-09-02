@@ -9490,6 +9490,12 @@ h2 {
 }
 
 /* line 104, ../scss/style.scss */
+h3 {
+  color: #FFF;
+  font-size: 20px;
+}
+
+/* line 109, ../scss/style.scss */
 h6 {
   font-size: 20px;
   font-family: "myriad-pro", sans-serif;
@@ -9497,30 +9503,75 @@ h6 {
   font-weight: lighter;
 }
 
-/* line 111, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
+.margin-t-20 {
+  margin-top: 20px;
+}
+
+/* line 120, ../scss/style.scss */
+.margin-t-60 {
+  margin-top: 60px;
+}
+
+/* line 124, ../scss/style.scss */
 .margin-t-185 {
   margin-top: 185px;
 }
 
-/* line 115, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 .margin-t-200 {
   margin-top: 200px;
 }
 
-/* line 119, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
+.relative {
+  position: relative;
+}
+
+/* line 136, ../scss/style.scss */
+.none {
+  display: none !important;
+}
+
+/* line 140, ../scss/style.scss */
+.blur {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/* line 148, ../scss/style.scss */
+.melonColour {
+  color: #F16259 !important;
+}
+
+/* line 152, ../scss/style.scss */
+.width-55-perc {
+  width: 55% !important;
+}
+
+/* line 156, ../scss/style.scss */
+.width-59-perc {
+  width: 59% !important;
+}
+
+/* line 160, ../scss/style.scss */
+.width
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 124, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 ::-webkit-input-placeholder {
   color: #FFF;
   font-weight: lighter;
   letter-spacing: 0.5px;
 }
 
-/* line 130, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   color: #FFF;
@@ -9528,7 +9579,7 @@ ul {
   letter-spacing: 0.5px;
 }
 
-/* line 136, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #FFF;
@@ -9536,7 +9587,7 @@ ul {
   letter-spacing: 0.5px;
 }
 
-/* line 142, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 :-ms-input-placeholder {
   color: #FFF;
   font-weight: lighter;
@@ -9545,7 +9596,7 @@ ul {
 
 /* ---------- End Global Styling ---------- */
 /* ---------- Other Styling ---------- */
-/* line 151, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 .melonBackground {
   background: #F16259 url("../img/loginBackground.jpg");
   background-size: contain;
@@ -9560,18 +9611,30 @@ ul {
   text-align: center;
 }
 
-/* line 165, ../scss/style.scss */
+/* line 208, ../scss/style.scss */
+.greyBackground {
+  background: #f8f8f8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  text-align: center;
+}
+
+/* line 219, ../scss/style.scss */
 .headingText {
   height: 189px;
 }
 
-/* line 169, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 .loginContainer, .retrieveContainer {
   width: 44%;
   margin: 0 auto;
   padding-top: 10px;
 }
-/* line 174, ../scss/style.scss */
+/* line 228, ../scss/style.scss */
 .loginContainer input, .retrieveContainer input {
   height: 50px;
   border-radius: 4px;
@@ -9583,15 +9646,15 @@ ul {
   line-height: 21px;
   font-weight: lighter;
 }
-/* line 185, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 .loginContainer input:focus, .retrieveContainer input:focus {
   background: rgba(255, 255, 255, 0.3);
 }
-/* line 190, ../scss/style.scss */
+/* line 244, ../scss/style.scss */
 .loginContainer .loginBtn, .retrieveContainer .loginBtn {
   margin-top: 60px;
 }
-/* line 193, ../scss/style.scss */
+/* line 247, ../scss/style.scss */
 .loginContainer .loginBtn button, .retrieveContainer .loginBtn button {
   background: transparent;
   border: 2px solid #983333;
@@ -9603,50 +9666,50 @@ ul {
   font-weight: normal;
   padding: 11px 0;
 }
-/* line 204, ../scss/style.scss */
+/* line 258, ../scss/style.scss */
 .loginContainer .loginBtn button:hover, .retrieveContainer .loginBtn button:hover {
   background: #983333;
   color: #FFF;
 }
-/* line 209, ../scss/style.scss */
+/* line 263, ../scss/style.scss */
 .loginContainer .loginBtn button:focus, .retrieveContainer .loginBtn button:focus {
   background: #983333;
   color: #FFF;
 }
-/* line 214, ../scss/style.scss */
+/* line 268, ../scss/style.scss */
 .loginContainer .loginBtn button:active, .retrieveContainer .loginBtn button:active {
   background: #983333;
   color: #FFF;
 }
-/* line 223, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .loginContainer .forgotPassword p, .retrieveContainer .forgotPassword p {
   font-size: 17px;
   color: #983333;
   cursor: pointer;
   font-weight: lighter;
 }
-/* line 229, ../scss/style.scss */
+/* line 283, ../scss/style.scss */
 .loginContainer .forgotPassword p:hover, .retrieveContainer .forgotPassword p:hover {
   font-weight: bold;
 }
-/* line 233, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 .loginContainer .forgotPassword p:focus, .retrieveContainer .forgotPassword p:focus {
   font-weight: bold;
 }
-/* line 237, ../scss/style.scss */
+/* line 291, ../scss/style.scss */
 .loginContainer .forgotPassword p:active, .retrieveContainer .forgotPassword p:active {
   font-weight: bold;
 }
 
-/* line 245, ../scss/style.scss */
+/* line 299, ../scss/style.scss */
 .email {
   position: relative;
 }
-/* line 249, ../scss/style.scss */
+/* line 303, ../scss/style.scss */
 .email input[type="email"] {
   position: relative;
 }
-/* line 253, ../scss/style.scss */
+/* line 307, ../scss/style.scss */
 .email:before {
   content: '5';
   font-family: jt-icons;
@@ -9658,15 +9721,15 @@ ul {
   z-index: 2;
 }
 
-/* line 266, ../scss/style.scss */
+/* line 320, ../scss/style.scss */
 .password {
   position: relative;
 }
-/* line 270, ../scss/style.scss */
+/* line 324, ../scss/style.scss */
 .password input[type="password"] {
   position: relative;
 }
-/* line 274, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 .password:before {
   content: '4';
   font-family: jt-icons;
@@ -9678,22 +9741,22 @@ ul {
   z-index: 2;
 }
 
-/* line 287, ../scss/style.scss */
+/* line 341, ../scss/style.scss */
 .retrieveContainer {
   padding-top: 10px;
 }
-/* line 290, ../scss/style.scss */
+/* line 344, ../scss/style.scss */
 .retrieveContainer input {
   margin-bottom: 126px;
 }
 
-/* line 296, ../scss/style.scss */
+/* line 350, ../scss/style.scss */
 .errorStyle {
   width: 44%;
   margin: 0 auto;
   padding-top: 10px;
 }
-/* line 301, ../scss/style.scss */
+/* line 355, ../scss/style.scss */
 .errorStyle input {
   height: 50px;
   border-radius: 4px;
@@ -9706,20 +9769,20 @@ ul {
   font-weight: lighter;
   border: 2px solid #D0504D;
 }
-/* line 313, ../scss/style.scss */
+/* line 367, ../scss/style.scss */
 .errorStyle input:focus {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* line 319, ../scss/style.scss */
+/* line 373, ../scss/style.scss */
 .errorEmail {
   position: relative;
 }
-/* line 323, ../scss/style.scss */
+/* line 377, ../scss/style.scss */
 .errorEmail input[type="email"] {
   position: relative;
 }
-/* line 327, ../scss/style.scss */
+/* line 381, ../scss/style.scss */
 .errorEmail:before {
   content: '5';
   font-family: jt-icons;
@@ -9731,15 +9794,15 @@ ul {
   z-index: 2;
 }
 
-/* line 340, ../scss/style.scss */
+/* line 394, ../scss/style.scss */
 .errorPassword {
   position: relative;
 }
-/* line 344, ../scss/style.scss */
+/* line 398, ../scss/style.scss */
 .errorPassword input[type="password"] {
   position: relative;
 }
-/* line 348, ../scss/style.scss */
+/* line 402, ../scss/style.scss */
 .errorPassword:before {
   content: '4';
   font-family: jt-icons;
@@ -9751,7 +9814,7 @@ ul {
   z-index: 2;
 }
 
-/* line 363, ../scss/style.scss */
+/* line 417, ../scss/style.scss */
 #whatPersonPage .circleIcon {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 60px;
@@ -9767,31 +9830,31 @@ ul {
   -o-transition: all 500ms ease 100ms;
   transition: all 500ms ease 100ms;
 }
-/* line 378, ../scss/style.scss */
+/* line 432, ../scss/style.scss */
 #whatPersonPage .circleIcon:first-child {
   margin-right: 70px;
 }
-/* line 382, ../scss/style.scss */
+/* line 436, ../scss/style.scss */
 #whatPersonPage .circleIcon:hover {
   background: #983333;
   color: #983333;
 }
-/* line 387, ../scss/style.scss */
+/* line 441, ../scss/style.scss */
 #whatPersonPage .circleIcon:active {
   background: #983333;
   color: #983333;
 }
-/* line 392, ../scss/style.scss */
+/* line 446, ../scss/style.scss */
 #whatPersonPage .circleIcon:focus {
   background: #983333;
   color: #983333;
 }
-/* line 397, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 #whatPersonPage .circleIcon p {
   font-family: "myriad-pro", sans-serif;
   font-size: 20px;
 }
-/* line 403, ../scss/style.scss */
+/* line 457, ../scss/style.scss */
 #whatPersonPage .personIcon {
   font-family: jt-icons;
   color: #F16259;
@@ -9799,7 +9862,7 @@ ul {
   line-height: 83px;
 }
 
-/* line 413, ../scss/style.scss */
+/* line 467, ../scss/style.scss */
 #chooseCentrePage .accordionPanel {
   width: 587.5px;
   margin: 20px auto 0 auto;
@@ -9809,7 +9872,7 @@ ul {
   border-radius: 4px;
   cursor: pointer;
 }
-/* line 423, ../scss/style.scss */
+/* line 477, ../scss/style.scss */
 #chooseCentrePage .logoCircle {
   display: inline-block;
   vertical-align: middle;
@@ -9820,33 +9883,33 @@ ul {
   padding: 5px;
   margin-left: 40px;
 }
-/* line 433, ../scss/style.scss */
+/* line 487, ../scss/style.scss */
 #chooseCentrePage .logoCircle img {
   width: 80%;
   height: 80%;
   margin-top: 6px;
   margin-left: 5px;
 }
-/* line 441, ../scss/style.scss */
+/* line 495, ../scss/style.scss */
 #chooseCentrePage .centreText {
   display: inline-block;
   vertical-align: middle;
   margin-left: 40px;
 }
-/* line 446, ../scss/style.scss */
+/* line 500, ../scss/style.scss */
 #chooseCentrePage .centreText .centreHeading {
   font-family: "myriad-pro", sans-serif;
   font-size: 20px;
   color: #F16259;
   font-weight: 500;
 }
-/* line 453, ../scss/style.scss */
+/* line 507, ../scss/style.scss */
 #chooseCentrePage .centreText .selectRoom {
   font-family: "myriad-pro", sans-serif;
   font-size: 17px;
   color: #9f9f9e;
 }
-/* line 460, ../scss/style.scss */
+/* line 514, ../scss/style.scss */
 #chooseCentrePage .centreList {
   background: #fbdbda;
   width: 587.5px;
@@ -9855,7 +9918,7 @@ ul {
   height: 289px;
   overflow-y: auto;
 }
-/* line 469, ../scss/style.scss */
+/* line 523, ../scss/style.scss */
 #chooseCentrePage .accordionList {
   padding: 10px 5px 10px 159px;
   color: #282828;
@@ -9863,30 +9926,30 @@ ul {
   border-bottom: 1px solid #F16259;
   cursor: pointer;
 }
-/* line 476, ../scss/style.scss */
+/* line 530, ../scss/style.scss */
 #chooseCentrePage .accordionList:last-child {
   border-bottom: none;
 }
-/* line 480, ../scss/style.scss */
+/* line 534, ../scss/style.scss */
 #chooseCentrePage .accordionList:hover {
   background: #F16259;
   color: #FFF;
 }
-/* line 485, ../scss/style.scss */
+/* line 539, ../scss/style.scss */
 #chooseCentrePage .accordionList:active {
   background: #F16259;
   color: #FFF;
 }
-/* line 490, ../scss/style.scss */
+/* line 544, ../scss/style.scss */
 #chooseCentrePage .accordionList:focus {
   background: #F16259;
   color: #FFF;
 }
-/* line 496, ../scss/style.scss */
+/* line 550, ../scss/style.scss */
 #chooseCentrePage .switchBtn {
   margin-top: 60px;
 }
-/* line 499, ../scss/style.scss */
+/* line 553, ../scss/style.scss */
 #chooseCentrePage .switchBtn button {
   background: transparent;
   border: 2px solid #983333;
@@ -9898,20 +9961,838 @@ ul {
   font-weight: normal;
   padding: 11px 0;
 }
-/* line 510, ../scss/style.scss */
+/* line 564, ../scss/style.scss */
 #chooseCentrePage .switchBtn button:hover {
   background: #983333;
   color: #FFF;
 }
-/* line 515, ../scss/style.scss */
+/* line 569, ../scss/style.scss */
 #chooseCentrePage .switchBtn button:focus {
   background: #983333;
   color: #FFF;
 }
-/* line 520, ../scss/style.scss */
+/* line 574, ../scss/style.scss */
 #chooseCentrePage .switchBtn button:active {
   background: #983333;
   color: #FFF;
+}
+
+/* line 582, ../scss/style.scss */
+.header {
+  background: #F16259;
+  height: 42px;
+  color: #FFF;
+}
+/* line 587, ../scss/style.scss */
+.header .topIcons {
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFF;
+  height: 31px;
+  width: 31px;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* line 597, ../scss/style.scss */
+.header .topIcons .icon {
+  font-family: jt-icons;
+  font-size: 26px;
+  font-weight: normal;
+}
+/* line 603, ../scss/style.scss */
+.header .topIcons .topIconText {
+  font-size: 14px;
+  display: none;
+}
+/* line 610, ../scss/style.scss */
+.header .topProfile {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
+/* line 616, ../scss/style.scss */
+.header .topProfile .profilePicture {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #FFF;
+  border-radius: 40px;
+}
+/* line 622, ../scss/style.scss */
+.header .topProfile .profilePicture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+/* line 630, ../scss/style.scss */
+.header .divider {
+  height: 25px;
+  width: 1px;
+  background: #983333;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 638, ../scss/style.scss */
+.header .searchBar {
+  position: absolute;
+  right: 170px;
+  width: 0px;
+}
+/* line 643, ../scss/style.scss */
+.header .searchBar input {
+  background: #f6918b;
+  border: none;
+  border-radius: 4px;
+  height: 33px;
+  text-align: right;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+/* line 655, ../scss/style.scss */
+.header .profileDropDown {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: #333333;
+  padding: 10px 20px;
+  right: 0;
+  border-radius: 4px;
+  margin-top: 8px;
+  height: 140px;
+}
+/* line 666, ../scss/style.scss */
+.header .profileDropDown:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333;
+  position: absolute;
+  top: -9px;
+  right: 5px;
+  z-index: 2;
+  border-radius: 5px;
+}
+/* line 680, ../scss/style.scss */
+.header .profileDropDown #viewProfileBtn {
+  cursor: pointer;
+}
+/* line 684, ../scss/style.scss */
+.header .profileDropDown .profilePicture {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #F16259;
+  border-radius: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+/* line 693, ../scss/style.scss */
+.header .profileDropDown .profilePicture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+/* line 700, ../scss/style.scss */
+.header .profileDropDown .profileText {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-family: "myriad-pro", sans-serif;
+}
+/* line 710, ../scss/style.scss */
+.header .profileDropDown .profileText .personEmail {
+  font-weight: lighter;
+  font-size: 12px;
+}
+/* line 716, ../scss/style.scss */
+.header .profileDropDown .logout {
+  margin-top: 30px;
+}
+/* line 719, ../scss/style.scss */
+.header .profileDropDown .logout button {
+  background: #333333;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  color: #ccc;
+  font-weight: lighter;
+  letter-spacing: 0.5px;
+  font-family: "myriad-pro", sans-serif;
+  padding: 6px 25px;
+  font-size: 14px;
+}
+
+/* line 734, ../scss/style.scss */
+.main, .sidebar {
+  background: #FFF;
+  height: auto;
+}
+
+/* line 739, ../scss/style.scss */
+.main {
+  width: 72%;
+  padding: 0px;
+}
+
+/* line 744, ../scss/style.scss */
+.sidebar {
+  height: auto;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  width: 250px;
+}
+/* line 751, ../scss/style.scss */
+.sidebar .sidebarFixed {
+  position: fixed;
+  width: 250px;
+  background: #FFF;
+}
+/* line 757, ../scss/style.scss */
+.sidebar .topProfile {
+  background: #ececec;
+  padding: 10px;
+}
+/* line 762, ../scss/style.scss */
+.sidebar .profilePicture {
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  width: 60px;
+  border: 2px solid #F16259;
+  border-radius: 60px;
+}
+/* line 770, ../scss/style.scss */
+.sidebar .profilePicture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+}
+/* line 777, ../scss/style.scss */
+.sidebar .profileText {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+/* line 782, ../scss/style.scss */
+.sidebar .profileText .profileName {
+  color: #F16259;
+  margin-bottom: -6px;
+}
+/* line 787, ../scss/style.scss */
+.sidebar .profileText .profileOptions {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 12px;
+  color: #A0A0A0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 797, ../scss/style.scss */
+.sidebar ul {
+  text-align: left;
+  list-style: none;
+  padding: 10px;
+}
+/* line 802, ../scss/style.scss */
+.sidebar ul li {
+  padding: 10px;
+  color: #A0A0A0;
+  cursor: pointer;
+  -webkit-transition: color 200ms ease-out 200ms;
+  -moz-transition: color 200ms ease-out 200ms;
+  -o-transition: color 200ms ease-out 200ms;
+  transition: color 200ms ease-out 200ms;
+}
+/* line 811, ../scss/style.scss */
+.sidebar ul li:hover {
+  color: #F16259;
+}
+/* line 817, ../scss/style.scss */
+.sidebar .sidebarIcon {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: jt-icons;
+  width: 30px;
+  font-size: 20px;
+}
+/* line 826, ../scss/style.scss */
+.sidebar .sidebarText {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: lighter;
+}
+/* line 833, ../scss/style.scss */
+.sidebar .divider {
+  width: 100%;
+  height: 1px;
+  background: #DCDCDC;
+  margin: 10px 0;
+}
+
+/* line 842, ../scss/style.scss */
+.subContainer {
+  background: #F0F0F0;
+  padding: 10px;
+  text-align: right;
+}
+/* line 847, ../scss/style.scss */
+.subContainer .editText {
+  color: #999999;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* line 856, ../scss/style.scss */
+#albums {
+  padding-bottom: 20px;
+}
+/* line 860, ../scss/style.scss */
+#albums .album {
+  display: inline-block;
+  vertical-align: top;
+  height: 150px;
+  width: 150px;
+  background: #f1f1f1;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  position: relative;
+}
+/* line 871, ../scss/style.scss */
+#albums .album:nth-child(2) {
+  margin-left: 0px;
+}
+/* line 875, ../scss/style.scss */
+#albums .album:nth-child(4n+6) {
+  margin-left: 0px;
+}
+/* line 880, ../scss/style.scss */
+#albums .imageContainer {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+/* line 886, ../scss/style.scss */
+#albums .folder1 {
+  width: 110px;
+  height: 110px;
+  background: lightgreen;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  border: 1px solid #ccc;
+}
+/* line 896, ../scss/style.scss */
+#albums .folder2 {
+  width: 130px;
+  height: 130px;
+  background: yellow;
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  border: 1px solid #ccc;
+  z-index: 8;
+}
+/* line 907, ../scss/style.scss */
+#albums .mainImage {
+  height: 150px;
+  width: 150px;
+  background: pink;
+  z-index: 9;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+/* line 916, ../scss/style.scss */
+#albums .albumTitle {
+  font-size: 17px;
+  color: #787878;
+  margin-top: 10px;
+}
+/* line 922, ../scss/style.scss */
+#albums .editAlbumTitle {
+  background: #F0F0F0;
+  border-radius: 4px;
+}
+/* line 927, ../scss/style.scss */
+#albums .albumContainer {
+  width: 150px;
+  text-align: center;
+  padding-left: 23px;
+  cursor: pointer;
+}
+/* line 934, ../scss/style.scss */
+#albums .addAlbumIcon {
+  font-family: jt-icons;
+  font-size: 150px;
+  text-align: left;
+  margin-top: 20px;
+  color: #C8C8C8;
+  position: relative;
+  z-index: 7;
+}
+/* line 943, ../scss/style.scss */
+#albums .addAlbumIcon:before {
+  content: "?";
+  position: absolute;
+  font-family: inherit;
+  font-size: 50px;
+  color: inherit;
+  margin-top: 71px;
+  z-index: 8;
+  margin-left: 51px;
+}
+/* line 955, ../scss/style.scss */
+#albums .addAlbumText {
+  margin-top: -45px;
+  color: #C8C8C8;
+  padding-left: 23px;
+}
+
+/* line 962, ../scss/style.scss */
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+/* line 975, ../scss/style.scss */
+.dialogContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 100%;
+}
+/* line 981, ../scss/style.scss */
+.dialogContainer .dialogBox {
+  background: #FFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -105px;
+  color: #505050;
+}
+/* line 996, ../scss/style.scss */
+.dialogContainer .dialogHeader .dialogText {
+  font-size: 17px;
+}
+/* line 1000, ../scss/style.scss */
+.dialogContainer .dialogHeader .deleteDialogText {
+  width: 284px;
+  margin: 0 auto;
+}
+/* line 1005, ../scss/style.scss */
+.dialogContainer .dialogHeader .deleteDialogCloseBtn {
+  margin-top: -112px !important;
+}
+/* line 1009, ../scss/style.scss */
+.dialogContainer .dialogHeader .dialogCloseBtn {
+  font-family: jt-icons;
+  font-size: 40px;
+  transform: rotate(45deg);
+  height: 40px;
+  width: 40px;
+  color: #C8C8C8;
+  cursor: pointer;
+  float: right;
+  margin-top: -38px;
+}
+/* line 1021, ../scss/style.scss */
+.dialogContainer .dialogHeader .messageDialogText {
+  width: 305px;
+  margin: 0 auto;
+}
+/* line 1026, ../scss/style.scss */
+.dialogContainer .dialogHeader .messageDialogCloseBtn {
+  margin-top: -63px !important;
+  margin-right: -15px;
+}
+/* line 1032, ../scss/style.scss */
+.dialogContainer .dialogInput {
+  background: #F0F0F0;
+  border: none;
+  box-shadow: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  height: 50px;
+  color: #A0A0A0;
+  font-size: 17px;
+  font-weight: lighter;
+}
+/* line 1046, ../scss/style.scss */
+.dialogContainer .deleteBtn, .dialogContainer .messageBtn {
+  margin-top: 23px;
+}
+/* line 1050, ../scss/style.scss */
+.dialogContainer button {
+  background: #FFF;
+  border: 2px solid #F16259;
+  border-radius: 50px;
+  color: #F16259;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "myriad-pro", sans-serif;
+  letter-spacing: 0.5px;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+/* line 1066, ../scss/style.scss */
+.selectAlbumTitle {
+  background: #FCDCDB !important;
+  color: #F16259 !important;
+  border-radius: 4px;
+}
+
+/* line 1072, ../scss/style.scss */
+.selectAlbum {
+  border: 4px solid #F16259 !important;
+}
+
+/* line 1076, ../scss/style.scss */
+.selectFolder {
+  border: none !important;
+}
+/* line 1080, ../scss/style.scss */
+.selectFolder:before {
+  content: "";
+  background: rgba(241, 98, 89, 0.6);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 1092, ../scss/style.scss */
+#profile .profileHeader {
+  background: #F16259;
+  text-align: center;
+  position: relative;
+  height: 235px;
+  width: 100%;
+  padding: 20px;
+}
+/* line 1101, ../scss/style.scss */
+#profile .profileImg {
+  height: 160px;
+  width: 160px;
+  margin: 0 auto;
+  border-radius: 85px;
+  border: 4px solid #FFF;
+  margin-bottom: 10px;
+}
+/* line 1109, ../scss/style.scss */
+#profile .profileImg img {
+  width: 100%;
+  border-radius: 85px;
+}
+/* line 1115, ../scss/style.scss */
+#profile .profileName {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "myriad-pro", sans-serif;
+}
+/* line 1122, ../scss/style.scss */
+#profile .profileInfo {
+  padding: 40px;
+  text-align: left;
+}
+/* line 1127, ../scss/style.scss */
+#profile .dob, #profile .gender, #profile .profileLabel, #profile .value, #profile .fname, #profile .lname {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 1132, ../scss/style.scss */
+#profile .dob, #profile .gender, #profile .address, #profile .mob, #profile .emailAdd, #profile .fname, #profile .lname {
+  margin-bottom: 40px;
+}
+/* line 1136, ../scss/style.scss */
+#profile .dob, #profile .gender, #profile .fname, #profile .lname {
+  width: 49%;
+}
+/* line 1140, ../scss/style.scss */
+#profile .gender {
+  margin-left: 2px;
+}
+/* line 1144, ../scss/style.scss */
+#profile .lname {
+  margin-left: 6px;
+}
+/* line 1150, ../scss/style.scss */
+#profile .emailAdd button {
+  background: #FFF;
+  border: 2px solid #F16259;
+  color: #F16259;
+  padding: 0 5px;
+  border-radius: 40px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  display: none;
+}
+/* line 1163, ../scss/style.scss */
+#profile .editProfileHeader {
+  height: auto !important;
+}
+/* line 1166, ../scss/style.scss */
+#profile .editProfileHeader .editProfileImg {
+  height: 40px !important;
+  width: 40px !important;
+  border: 2px solid #FFF !important;
+  cursor: pointer;
+}
+/* line 1174, ../scss/style.scss */
+#profile .currentPW, #profile .newPW, #profile .confirmPW {
+  margin-bottom: 20px;
+}
+/* line 1178, ../scss/style.scss */
+#profile .profileLabel {
+  color: #F16259;
+  display: inline-block;
+  width: 120px;
+  font-family: "museo", serif;
+  font-size: 16px;
+}
+/* line 1186, ../scss/style.scss */
+#profile .passwordLabel {
+  width: 188px;
+}
+/* line 1190, ../scss/style.scss */
+#profile .value {
+  font-weight: lighter;
+  font-size: 17px;
+}
+/* line 1195, ../scss/style.scss */
+#profile #bioValue {
+  width: 80%;
+}
+/* line 1199, ../scss/style.scss */
+#profile .editValue, #profile .editPasswordValue {
+  background: #F0F0F0;
+  padding: 10px;
+  border-radius: 4px;
+  width: 80%;
+}
+/* line 1206, ../scss/style.scss */
+#profile .editPasswordValue {
+  width: 70%;
+}
+/* line 1210, ../scss/style.scss */
+#profile .btnContainer {
+  padding-left: 125px;
+  margin-top: 40px;
+  display: none;
+}
+/* line 1215, ../scss/style.scss */
+#profile .btnContainer button {
+  background: #FFF;
+  border: 2px solid #F16259;
+  color: #F16259;
+  border-radius: 80px;
+  width: 180px;
+  padding: 15px 0;
+  margin-right: 60px;
+}
+/* line 1225, ../scss/style.scss */
+#profile .btnContainer .greyBtn {
+  color: #787878;
+  border: 2px solid #787878;
+  margin-right: 0px;
+}
+/* line 1232, ../scss/style.scss */
+#profile .passwordBtnContainer {
+  margin-top: 60px;
+  text-align: center;
+}
+/* line 1236, ../scss/style.scss */
+#profile .passwordBtnContainer button {
+  background: #FFF;
+  border: 2px solid #F16259;
+  color: #F16259;
+  border-radius: 80px;
+  width: 180px;
+  padding: 15px 0;
+}
+
+/* line 1249, ../scss/style.scss */
+#tree {
+  padding: 40px;
+  text-align: left;
+}
+/* line 1253, ../scss/style.scss */
+#tree .postContainer {
+  background: #F0F0F0;
+  border-radius: 4px;
+  padding: 5px 18px;
+  text-align: left;
+  color: #505050;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* line 1262, ../scss/style.scss */
+#tree .postContainer .staffImg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 33px;
+  height: 33px;
+  border: 2px solid #F16259;
+  border-radius: 30px;
+}
+/* line 1270, ../scss/style.scss */
+#tree .postContainer .staffImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+/* line 1277, ../scss/style.scss */
+#tree .postContainer .post {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  width: 82%;
+  padding: 8px 0;
+}
+/* line 1285, ../scss/style.scss */
+#tree .postContainer .plusIcon {
+  font-family: jt-icons;
+  float: right;
+  margin-top: -4px;
+  font-size: 35px;
+  color: #A0A0A0;
+  cursor: pointer;
+}
+/* line 1295, ../scss/style.scss */
+#tree .postedBy {
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+/* line 1301, ../scss/style.scss */
+#tree .postedByImg {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 80px;
+  border: 18px solid #FFF;
+}
+/* line 1309, ../scss/style.scss */
+#tree .postedByImg img {
+  border-radius: 40px;
+  border: 2px solid #F16259;
+}
+/* line 1315, ../scss/style.scss */
+#tree .postedByText {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+/* line 1320, ../scss/style.scss */
+#tree .postedByText .postMelonText {
+  color: #F16259;
+  font-weight: 500;
+}
+/* line 1326, ../scss/style.scss */
+#tree .thumbnail {
+  margin-top: -22px;
+  height: auto;
+  width: 640px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 1333, ../scss/style.scss */
+#tree .thumbnail img {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+}
+/* line 1341, ../scss/style.scss */
+#tree .postItem {
+  background: #D1E0AB;
+  padding: 40px;
+  margin-top: -22px;
+}
+/* line 1347, ../scss/style.scss */
+#tree .postInfo {
+  color: #A0A0A0;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+/* line 1353, ../scss/style.scss */
+#tree .postInfo .bold {
+  font-weight: 600;
+}
+/* line 1356, ../scss/style.scss */
+#tree .postInfo .tags {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 1361, ../scss/style.scss */
+#tree .postInfo .time {
+  float: right;
+  margin-top: 3px;
+}
+/* line 1367, ../scss/style.scss */
+#tree .divider {
+  width: 100%;
+  height: 1px;
+  background: #A0A0A0;
+  margin: 40px 0;
+}
+/* line 1374, ../scss/style.scss */
+#tree .storyFeedTitle {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #FFF;
+  font-family: "museo", serif;
+  font-size: 35px;
+  padding: 20px;
+  font-weight: lighter;
+}
+/* line 1386, ../scss/style.scss */
+#tree .smallThumbnail {
+  display: inline-block;
+  vertical-align: middle;
+  width: 157px;
+  height: auto;
+  margin-top: 5px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 1396, ../scss/style.scss */
+#tree .morePhotos {
+  position: absolute;
+  color: #efeff4;
+  font-size: 45px;
+  top: 9px;
+  left: 50%;
+  margin-left: -29px;
 }
 
 /* ---------- End Other Styling ---------- */

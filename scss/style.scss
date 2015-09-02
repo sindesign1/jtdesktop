@@ -101,11 +101,24 @@ h2 {
 	color: $white;
 }
 
+h3 {
+	color: $white;
+	font-size: 20px;
+}
+
 h6 {
 	font-size: 20px;
 	font-family: $myriad;
 	color: $white;
 	font-weight: lighter;
+}
+
+.margin-t-20 {
+	margin-top: 20px;
+}
+
+.margin-t-60 {
+	margin-top: 60px;
 }
 
 .margin-t-185 {
@@ -115,6 +128,36 @@ h6 {
 .margin-t-200 {
 	margin-top: 200px;
 }
+
+.relative {
+	position: relative;
+}
+
+.none {
+	display: none !important;
+}
+
+.blur {
+	-webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.melonColour {
+	color: $melon !important;
+}
+
+.width-55-perc {
+	width: 55% !important;
+}
+
+.width-59-perc {
+	width: 59% !important;
+}
+
+.width
 
 ul {
 	margin: 0;
@@ -153,6 +196,17 @@ ul {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	text-align: center;
+}
+
+.greyBackground {
+	background: #f8f8f8;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -522,6 +576,830 @@ ul {
 				color: $white;
 			}
 		}
+	}
+}
+
+.header {
+	background: $melon;
+	height: 42px;
+	color: $white;
+
+	.topIcons {
+		display: inline-block;
+		vertical-align: middle;
+		color: $white;
+		height: 31px;
+		width: 31px;
+		float: left;
+		margin-right: 10px;
+		cursor: pointer;
+
+		.icon {
+			font-family: $iconfont;
+			font-size: 26px;
+			font-weight: normal;
+		}
+
+		.topIconText {
+			font-size: 14px;
+			display: none;
+		}
+
+	}
+
+	.topProfile {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 5px;
+		cursor: pointer;
+
+		.profilePicture {
+			width: 30px;
+			height: 30px;
+			border: 2px solid $white;
+			border-radius: 40px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 40px;
+			}
+		}
+	}
+
+	.divider {
+		height: 25px;
+		width: 1px;
+		background: $dark-melon;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.searchBar {
+		position: absolute;
+		right: 170px;
+		width: 0px;
+
+		input {
+			background: #f6918b;
+			border: none;
+			border-radius: 4px;
+			height: 33px;
+			text-align: right;
+			color: $white;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.profileDropDown {
+		display: none;
+		position: absolute;
+		z-index: 1;
+		background: #333333;
+		padding: 10px 20px;
+		right: 0;
+		border-radius: 4px;
+		margin-top: 8px;
+		height: 140px;
+
+		&:before {
+			content: "";
+			width: 0; 
+			height: 0; 
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-bottom: 10px solid #333;
+			position: absolute;
+			top: -9px;
+			right: 5px;
+			z-index: 2;
+			border-radius: 5px;
+		}
+
+		#viewProfileBtn {
+			cursor: pointer;
+		}
+
+		.profilePicture {
+			width: 50px;
+			height: 50px;
+			border: 2px solid $melon;
+			border-radius: 40px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 15px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 40px;
+			}
+		}
+
+		.profileText {
+			display: inline-block;
+			vertical-align: middle;
+			text-align: left;
+			font-family: $myriad;
+
+			.personName {
+
+			}
+
+			.personEmail {
+				font-weight: lighter;
+				font-size: 12px;
+			}
+		}
+
+		.logout {
+			margin-top: 30px;
+
+			button {
+				background: #333333;
+				border: 2px solid #ccc;
+				border-radius: 40px;
+				color: #ccc;
+				font-weight: lighter;
+				letter-spacing: 0.5px;
+				font-family: $myriad;
+				padding: 6px 25px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.main, .sidebar {
+	background: $white;
+	height: auto;
+}
+
+.main {
+	width: 72%;
+	padding: 0px;
+}
+
+.sidebar {
+	height: auto;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	width: 250px;
+
+	.sidebarFixed {
+		position: fixed;
+		width: 250px;
+		background: $white;
+	}
+
+	.topProfile {
+		background: #ececec;
+		padding: 10px;
+	}
+
+	.profilePicture {
+		display: inline-block;
+		vertical-align: middle;
+		height: 60px;
+		width: 60px;
+		border: 2px solid $melon;
+		border-radius: 60px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 60px;
+		}
+	}
+
+	.profileText {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+
+		.profileName {
+			color: $melon;
+			margin-bottom: -6px;
+		}
+
+		.profileOptions {
+			display: inline-block;
+			vertical-align: bottom;
+			font-size: 12px;
+			color: $grey160;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+
+	ul {
+		text-align: left;
+		list-style: none;
+		padding: 10px;
+
+		li {
+			padding: 10px;
+			color: $grey160;
+			cursor: pointer;
+			-webkit-transition: color 200ms ease-out 200ms;
+		    -moz-transition: color 200ms ease-out 200ms;
+		    -o-transition: color 200ms ease-out 200ms;
+		    transition: color 200ms ease-out 200ms;
+
+			&:hover {
+				color: $melon;
+			}
+		}
+	}
+
+	.sidebarIcon {
+		display: inline-block;
+		vertical-align: middle;
+		font-family: $iconfont;
+		width: 30px;
+		font-size: 20px;
+		
+	}
+
+	.sidebarText {
+		display: inline-block;
+		vertical-align: middle;
+		font-family: $myriad;
+		font-weight: lighter;
+	}
+
+	.divider {
+		width: 100%;
+		height: 1px;
+		background: $grey220;
+		margin: 10px 0;
+	}
+
+}
+
+.subContainer {
+	background: $grey240;
+	padding: 10px;
+	text-align: right;
+
+	.editText {
+		color: #999999;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 14px;
+		cursor: pointer;
+	}
+}
+
+#albums {
+
+	padding-bottom: 20px;
+
+	.album {
+		display: inline-block;
+		vertical-align: top;
+		height: 150px;
+		width: 150px;
+		background: #f1f1f1;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		margin-top: 60px;
+		position: relative;
+
+		&:nth-child(2) {
+			margin-left: 0px;
+		}
+
+		&:nth-child(4n+6) {
+			margin-left: 0px;
+		}
+	}
+
+	.imageContainer {
+		position: relative;
+		width: 150px;
+		height: 150px;
+	}
+
+	.folder1 {
+		width: 110px;
+		height: 110px;
+		background: lightgreen;
+		position: absolute;
+		top: -15px;
+		left: 20px;
+		border: 1px solid #ccc;
+	}
+
+	.folder2 {
+		width: 130px;
+		height: 130px;
+		background: yellow;
+		position: absolute;
+		top: -8px;
+		left: 10px;
+		border: 1px solid #ccc;
+		z-index: 8;
+	}
+
+	.mainImage {
+		height: 150px;
+		width: 150px;
+		background: pink;
+		z-index: 9;
+		border: 1px solid #ccc;
+		position: absolute;
+	}
+
+	.albumTitle {
+		font-size: 17px;
+		color: $grey120;
+		margin-top: 10px;
+	}
+
+	.editAlbumTitle {
+		background: $grey240;
+		border-radius: 4px;
+	}
+
+	.albumContainer {
+		width: 150px;
+		text-align: center;
+		padding-left: 23px;
+		cursor: pointer;
+	}
+
+	.addAlbumIcon {
+		font-family: $iconfont;
+		font-size: 150px;
+		text-align: left;
+		margin-top: 20px;
+		color: $grey200;
+		position: relative;
+		z-index: 7;
+
+		&:before {
+			content: "?";
+			position: absolute;
+			font-family: inherit;
+			font-size: 50px;
+			color: inherit;
+			margin-top: 71px;
+			z-index: 8;
+			margin-left: 51px;
+		}
+	}
+
+	.addAlbumText {
+		margin-top: -45px;
+		color: $grey200;
+		padding-left: 23px;
+	}
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: 10;
+}
+
+.dialogContainer {
+	position: relative;
+	margin: 0 auto;
+	width: 400px;
+	height: 100%;
+
+	.dialogBox {
+		background: $white;
+		border-radius: 4px;
+		box-sizing: border-box;
+		padding: 15px 20px;
+		height: auto;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		margin-top: -105px;
+		color: #505050;
+	}
+
+	.dialogHeader {
+
+		.dialogText {
+			font-size: 17px;
+		}
+
+		.deleteDialogText {
+			width: 284px;
+			margin: 0 auto;
+		}
+
+		.deleteDialogCloseBtn {
+			margin-top: -112px !important;
+		}
+
+		.dialogCloseBtn {
+			font-family: $iconfont;
+			font-size: 40px;
+			transform: rotate(45deg);
+			height: 40px;
+			width: 40px;
+			color: $grey200;
+			cursor: pointer;
+			float: right;
+			margin-top: -38px;
+		}
+
+		.messageDialogText {
+			width: 305px;
+			margin: 0 auto;
+		}
+
+		.messageDialogCloseBtn {
+			margin-top: -63px !important;
+			margin-right: -15px;
+		}
+	}
+
+	.dialogInput {
+		background: $grey240;
+		border: none;
+		box-shadow: none;
+		border-radius: 4px;
+		margin-top: 20px;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		height: 50px;
+		color: $grey160;
+		font-size: 17px;
+		font-weight: lighter;
+	}
+
+	.deleteBtn, .messageBtn {
+		margin-top: 23px;
+	}
+
+	button {
+		background: $white;
+		border: 2px solid $melon;
+		border-radius: 50px;
+		color: $melon;
+		width: 150px;
+		height: 50px;
+		font-size: 20px;
+		font-family: $myriad;
+		letter-spacing: 0.5px;
+		padding: 0;
+		margin-bottom: 0px;
+		margin-top: 5px;
+	}
+}
+
+.selectAlbumTitle {
+	background: $pale-melon !important;
+	color: $melon !important;
+	border-radius: 4px;
+}
+
+.selectAlbum {
+	border: 4px solid $melon !important;
+}
+
+.selectFolder {
+
+	border: none !important; 
+
+	&:before {
+		content: "";
+		background: rgba(241, 98, 89, 0.6);
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+#profile {
+	.profileHeader {
+		background: $melon;
+		text-align: center;
+		position: relative;
+		height: 235px;
+		width: 100%;
+		padding: 20px;
+	}
+
+	.profileImg {
+		height: 160px;
+		width: 160px;
+		margin: 0 auto;
+		border-radius: 85px;
+		border: 4px solid $white;
+		margin-bottom: 10px;
+
+		img {
+			width: 100%;
+			border-radius: 85px;
+		}
+	}
+
+	.profileName {
+		color: $white;
+		font-size: 20px;
+		font-weight: lighter;
+		font-family: $myriad;
+	}
+
+	.profileInfo {
+		padding: 40px;
+		text-align: left;
+	}
+
+	.dob, .gender, .profileLabel, .value, .fname, .lname {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.dob, .gender, .address, .mob, .emailAdd, .fname, .lname {
+		margin-bottom: 40px;
+	}
+
+	.dob, .gender, .fname, .lname {
+		width: 49%;
+	}
+
+	.gender {
+		margin-left: 2px;
+	}
+
+	.lname {
+		margin-left: 6px;
+	}
+
+	.emailAdd {
+
+		button {
+			background: $white;
+			border: 2px solid $melon;
+			color: $melon;
+			padding: 0 5px;
+			border-radius: 40px;
+			font-size: 12px;
+			letter-spacing: 0.5px;
+			margin-left: 5px;
+			display: none;
+		}
+	}
+
+	.editProfileHeader {
+		height: auto !important;
+
+		.editProfileImg {
+			height: 40px !important;
+			width: 40px !important;
+			border: 2px solid $white !important;
+			cursor: pointer;
+		}
+	}
+
+	.currentPW, .newPW, .confirmPW {
+		margin-bottom: 20px;
+	}
+
+	.profileLabel {
+		color: $melon;
+		display: inline-block;
+		width: 120px;
+		font-family: $museo;
+		font-size: 16px;
+	}
+
+	.passwordLabel {
+		width: 188px;
+	}
+
+	.value {
+		font-weight: lighter;
+		font-size: 17px;
+	}
+
+	#bioValue {
+		width: 80%;
+	}
+
+	.editValue, .editPasswordValue {
+		background: $grey240;
+		padding: 10px;
+		border-radius: 4px;
+		width: 80%;
+	}
+
+	.editPasswordValue {
+		width: 70%;
+	}
+
+	.btnContainer {
+		padding-left: 125px;
+		margin-top: 40px;
+		display: none;
+
+		button {
+			background: $white;
+			border: 2px solid $melon;
+			color: $melon;
+			border-radius: 80px;
+			width: 180px;
+			padding: 15px 0;
+			margin-right: 60px;
+		}
+
+		.greyBtn {
+			color: $grey120;
+			border: 2px solid $grey120;
+			margin-right: 0px;
+		}
+	}
+
+	.passwordBtnContainer {
+		margin-top: 60px;
+		text-align: center;
+
+		button {
+			background: $white;
+			border: 2px solid $melon;
+			color: $melon;
+			border-radius: 80px;
+			width: 180px;
+			padding: 15px 0;
+		}
+	}
+
+
+}
+
+#tree {
+	padding: 40px;
+	text-align: left;
+
+	.postContainer {
+		background: $grey240;
+		border-radius: 4px;
+		padding: 5px 18px;
+		text-align: left;
+		color: $grey80;
+		margin-bottom: 20px;
+		cursor: pointer;
+
+		.staffImg {
+			display: inline-block;
+			vertical-align: middle;
+			width: 33px;
+			height: 33px;
+			border: 2px solid $melon;
+			border-radius: 30px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				border-radius: 30px;
+			}
+		}
+
+		.post {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 20px;
+			width: 82%;
+			padding: 8px 0;
+		}
+
+		.plusIcon {
+			font-family: $iconfont;
+			float: right;
+			margin-top: -4px;
+			font-size: 35px;
+			color: $grey160;
+			cursor: pointer;
+		}
+	}
+
+	.postedBy {
+		padding-left: 20px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.postedByImg {
+		width: 80px;
+		height: 80px;
+		display: inline-block;
+		vertical-align: middle;
+		border-radius: 80px;
+		border: 18px solid $white;
+
+		img {
+			border-radius: 40px;
+			border: 2px solid $melon;
+		}
+	}
+
+	.postedByText {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 14px;
+
+		.postMelonText {
+			color: $melon;
+			font-weight: 500;
+		}
+	}
+
+	.thumbnail {
+		margin-top: -22px;
+		height: auto;
+		width: 640px;
+		position: relative;
+		cursor: pointer;
+
+		img {
+			height: 100%;
+			min-height: 100%;
+			max-height: 100%;
+			width: 100%;
+		}
+	}
+
+	.postItem {
+		background: $hue-green;
+		padding: 40px;
+		margin-top: -22px;
+	}
+
+	.postInfo {
+		color: $grey160;
+		font-size: 12px;
+		margin-top: 10px;
+		font-weight: lighter;
+
+		.bold {
+			font-weight: 600;
+		}
+		.tags {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.time {
+			float: right;
+			margin-top: 3px;
+		}
+	}
+
+	.divider {
+		width: 100%;
+		height: 1px;
+		background: $grey160;
+		margin: 40px 0;
+	}
+
+	.storyFeedTitle {
+		background: rgba(0,0,0,0.5);
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		color: $white;
+		font-family: $museo;
+		font-size: 35px;
+		padding: 20px;
+		font-weight: lighter;
+	}
+
+	.smallThumbnail {
+		display: inline-block;
+		vertical-align: middle;
+		width: 157px;
+		height: auto;
+		margin-top: 5px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.morePhotos {
+	    position: absolute;
+	    color: #efeff4;
+	    font-size: 45px;
+	    top: 9px;
+	    left: 50%;
+	    margin-left: -29px;
 	}
 }
 

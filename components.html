@@ -9,7 +9,7 @@
         <script src="//use.typekit.net/xxx2qsl.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
     </head>
-    <body class="melonBackground">
+    <body>
         <!-- Login Page -->
         <div id="loginPage">
             <div class="row margin-t-200">
@@ -118,7 +118,7 @@
                             <dt class="accordionPanel">
                               <a href="">
                                 <div class="logoCircle">
-                                    <img src="img/iconWhirlybirds.png" />
+                                    <img id="centreLogo" src="img/iconWhirlybirds.png" />
                                 </div>
                                 <div class="centreText">
                                     <div class="centreHeading">Whirlybirds Learning Centre</div>
@@ -153,6 +153,402 @@
             </div>
         </div>
         <!-- End Choose Centre Page -->
+        <!-- Main Template -->
+        <div id="mainTemplate">
+            <div id="blur">
+                <div class="fixed">
+                    <div class="header">
+                        <div class="row">
+                            <div class="small-9 columns" style="margin-top:6px;">
+                                <h3 id="headerTitle">JourneyTree</h3>
+                            </div>
+                            <div class="small-3 columns" style="text-align:right;margin-top:4px;padding: 0;">
+                                <span class="topIcons">
+                                    <div class="icon">1</div>
+                                    <div class="topIconText">tree</div>
+                                </span>
+                                <span class="topIcons">
+                                    <div class="icon">i</div>
+                                    <div class="topIconText">messages</div>
+                                </span>
+                                <form class="searchBar">
+                                    <input type="text" class="searchInput" placeholder="search" />
+                                </form>
+                                <span class="topIcons">
+                                    <div class="icon" id="searchBtn">3</div>
+                                </span>
+                                <!-- <div class="divider"></div> -->
+                                <span class="topProfile" id="profileBtn">
+                                    <div class="profilePicture">
+                                        <img id="displayPicture" src="img/hannah.jpg" />
+                                    </div>
+                                </span>
+                                <div class="profileDropDown">
+                                    <div id="viewProfileBtn">
+                                        <div class="profilePicture" id="dropdownDisplayPicture">
+                                            <img src="img/hannah.jpg" />
+                                        </div>
+                                        <div class="profileText">
+                                            <div class="personName" id="usersName">Miss Hannah</div>
+                                            <div class="personEmail" id="usersEmail">hannah@email.com.au</div>
+                                        </div>
+                                        <div class="logout">
+                                            <button type="button" class="logoutBtn">logout</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-t-60 relative">
+                    <div class="large-9 columns main" id="mainContainer"></div>
+                    <div class="large-3 columns sidebar">
+                        <div class="sidebarFixed">  
+                            <ul id="mainMenu">
+                                <li>
+                                    <div class="sidebarIcon">1</div>
+                                    <div class="sidebarText">tree</div>
+                                </li>
+                                <li>
+                                    <div class="sidebarIcon">i</div>
+                                    <div class="sidebarText">messages</div>
+                                </li>
+                                <li>
+                                    <div class="sidebarIcon">}</div>
+                                    <div class="sidebarText">children</div>
+                                </li>
+                                <li>
+                                    <div class="sidebarIcon">h</div>
+                                    <div class="sidebarText">images</div>
+                                </li>
+                                <li id="albumsBtn">
+                                    <div class="sidebarIcon">@</div>
+                                    <div class="sidebarText">albums</div>
+                                </li>
+                                <li>
+                                    <div class="sidebarIcon">x</div>
+                                    <div class="sidebarText">stories</div>
+                                </li>
+                                <div class="divider"></div>
+                                <li>
+                                    <div class="sidebarIcon">~</div>
+                                    <div class="sidebarText">locations</div>
+                                </li>
+                                <li>
+                                    <div class="sidebarIcon">g</div>
+                                    <div class="sidebarText">help</div>
+                                </li>
+                            </ul>
+                            <ul id="editMenu" style="display:none;">
+                                <li>
+                                    <div class="sidebarIcon">2</div>
+                                    <div class="sidebarText">post</div>
+                                </li>
+                                <li>
+                                    <div class="sidebarIcon">e</div>
+                                    <div class="sidebarText">favourite</div>
+                                </li>
+                                <li>
+                                    <div class="sidebarIcon">[</div>
+                                    <div class="sidebarText">albums</div>
+                                </li>
+                                <li id="deleteBtn">
+                                    <div class="sidebarIcon">a</div>
+                                    <div class="sidebarText">delete</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="modals"></div>
+        </div>
+        <!-- End Main Template -->
+        <!-- Albums Page -->
+        <div id="albums">
+            <div class="subContainer">
+                <div class="editContainer" id="editAlbums">
+                    <div class="editText">edit</div>
+                </div>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_01.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_02.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_03.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_04.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_05.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_06.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_07.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_08.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_09.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_10.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_11.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_12.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_13.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_14.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_15.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_16.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_17.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_18.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_19.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_20.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_21.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="album">
+                <div class="imageContainer">
+                    <div class="folder1">
+                        <img src="img/classroomThumbs/thumb_IMG_22.jpg" />
+                    </div>
+                    <div class="folder2">
+                        <img src="img/classroomThumbs/thumb_IMG_23.jpg" />
+                    </div>
+                    <div class="mainImage">
+                        <img src="img/classroomThumbs/thumb_IMG_24.jpg" />
+                    </div>
+                </div>
+                <p class="albumTitle">Favourites</p>
+            </div>
+            <div class="albumContainer" id="addAlbumBtn">
+                <div class="addAlbumIcon">[</div>
+                <div class="addAlbumText">new album</div>
+            </div>
+        </div>
+        <!-- End Albums Page -->
+        <!-- Staff Profile Page -->
+        <div id="profile">
+            <div id="profileInfo">
+                <div class="subContainer">
+                    <div class="editContainer" id="editProfile">
+                        <div class="editText">edit</div>
+                    </div>
+                </div>
+                <div class="profileHeader">
+                    <div class="profileImg">
+                        <img src="img/hannah.jpg" />
+                    </div>
+                    <div class="profileName">Hannah Brown</div>
+                </div>
+                <div class="profileInfo">
+                    <div class="dob">
+                        <div class="profileLabel">DOB:</div>
+                        <div class="value editable" id="dobValue">20/03/1989</div>
+                    </div>
+                    <div class="gender">
+                        <div class="profileLabel">Gender:</div>
+                        <div class="value editable" id="genderValue">Female</div>
+                    </div>
+                    <div class="address">
+                        <div class="profileLabel">Address:</div>
+                        <div class="value editable" id="addValue">10 Simpson St, Red Hill, QLD 4552</div>
+                    </div>
+                    <div class="mob">
+                        <div class="profileLabel">Mobile:</div>
+                        <div class="value editable" id="mobValue">+61 427 569 288</div>
+                    </div>
+                    <div class="emailAdd">
+                        <div class="profileLabel">Email:</div>
+                        <div class="value" id="emailValue">hannahbrown@whirlybirds.edu.au</div>
+                        <button id="infoBtn">info</button>
+                    </div>
+                    <div class="bio">
+                        <div class="profileLabel">Bio:</div>
+                        <div class="value editable" id="bioValue">Miss Hannah has a Dip Ed in early childhood learning and has been a teacher at Sam’s ELC for three years.  She likes outdoor adventures and surfing.</div>
+                    </div>
+                    <div class="btnContainer">
+                        <button type="button">save</button>
+                        <button type="button" class="greyBtn" id="profileChangePW">change password</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ******************* CHANGE PASSWORD ****************** -->
+            <div id="changePasswordInfo" style="display:none;">
+                <div class="subContainer">
+                    <div class="editContainer" id="editProfilePassword">
+                        <div class="editText">edit</div>
+                    </div>
+                </div>
+                <div class="profileInfo">
+                    <div class="currentPW">
+                        <div class="profileLabel passwordLabel">Current Password:</div>
+                        <div class="value editPasswordValue" contenteditable="true" id="currentPassword"></div>
+                    </div>
+                    <div class="newPW">
+                        <div class="profileLabel passwordLabel">New Password:</div>
+                        <div class="value editPasswordValue" contenteditable="true" id="newPassword"></div>
+                    </div>
+                    <div class="confirmPW">
+                        <div class="profileLabel passwordLabel">Confirm Password:</div>
+                        <div class="value editPasswordValue" contenteditable="true" id="confirmPassword"></div>
+                    </div>
+                    <div class="passwordBtnContainer">
+                        <button type="button">save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Staff Profile Page -->
+
+
+
+
+
+
+
+
+        <!-- ****************************************************************** MODALS ****************************************************************** -->
+        <div id="albumModals">
+            <!-- Add Album Modal -->
+            <div class="modal" id="addAlbumModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <div class="dialogText">Enter a name for this album</div>
+                            <div class="dialogCloseBtn" id="closeAddAlbumModal">?</div>
+                        </div>
+                        <input type="text" class="dialogInput" />
+                        <button type="button">save</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Add Album Modal -->
+            <!-- Edit Album Title Modal -->
+            <div class="modal" id="editAlbumTitleModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <div class="dialogText">Edit Album Name</div>
+                            <div class="dialogCloseBtn" id="closeEditAlbumTitleModal">?</div>
+                        </div>
+                        <input type="text" class="dialogInput" id="albumTitleInput" />
+                        <button type="button" id="saveAlbumTitleBtn">save</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Edit Album Title Modal -->
+            <!-- Delete Album Modal -->
+            <div class="modal" id="deleteAlbumModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <div class="dialogText deleteDialogText">Are you sure about this?</div> 
+                            <div class="dialogText deleteDialogText">This album will be permanently deleted but your photos will still be available in your JourneyTree images.</div>
+                            <div class="dialogCloseBtn deleteDialogCloseBtn" id="closeDeleteAlbumModal">?</div>
+                        </div>
+                        <button type="button" class="deleteBtn">delete</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Delete Album Modal -->
+        </div>
+        <div id="staffProfileModals">
+            <!-- Edit Profile Img Modal -->
+            <div class="modal" id="editProfileImgModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <!-- <div class="dialogText deleteDialogText">Are you sure about this?</div>  -->
+                            <div class="dialogText messageDialogText">To change your profile picture log into your account at app.journeytree.com.au</div>
+                            <div class="dialogCloseBtn messageDialogCloseBtn" id="closeEditProfileImgModal">?</div>
+                        </div>
+                        <button type="button" id="editProfileImgBtn" class="messageBtn">ok</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Edit Profile Img Modal -->
+            <!-- Edit Email Modal -->
+            <div class="modal" id="emailInfoModal">
+                <div class="dialogContainer">
+                    <div class="dialogBox">
+                        <div class="dialogHeader">
+                            <!-- <div class="dialogText deleteDialogText">Are you sure about this?</div>  -->
+                            <div class="dialogText messageDialogText">To change your email address log into your account at app.journeytree.com.au</div>
+                            <div class="dialogCloseBtn messageDialogCloseBtn" id="closeEmailInfoModal">?</div>
+                        </div>
+                        <button type="button" id="emailInfoModalBtn" class="messageBtn">ok</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Edit Email Modal -->
+        </div>
+        <!-- ****************************************************************** END MODALS ****************************************************************** -->
+
+
 
     
     <!-- <div class="row">
