@@ -156,89 +156,68 @@
         <!-- Main Template -->
         <div id="mainTemplate">
             <div id="blur">
-                <div class="fixed">
-                    <div class="header">
-                        <div class="row">
-                            <div class="small-9 columns" style="margin-top:6px;">
-                                <h3 id="headerTitle">JourneyTree</h3>
-                            </div>
-                            <div class="small-3 columns" style="text-align:right;margin-top:4px;padding: 0;">
-                                <span class="topIcons">
-                                    <div class="icon">1</div>
-                                    <div class="topIconText">tree</div>
-                                </span>
-                                <span class="topIcons">
-                                    <div class="icon">i</div>
-                                    <div class="topIconText">messages</div>
-                                </span>
-                                <form class="searchBar">
-                                    <input type="text" class="searchInput" placeholder="search" />
-                                </form>
-                                <span class="topIcons">
-                                    <div class="icon" id="searchBtn">3</div>
-                                </span>
-                                <!-- <div class="divider"></div> -->
-                                <span class="topProfile" id="profileBtn">
+                <div class="header fixed">
+                    <div class="row">
+                        <div class="small-9 columns" style="margin-top:6px;">
+                            <h3>JourneyTree</h3>
+                        </div>
+                        <div class="small-3 columns" style="text-align:right;margin-top:4px;padding: 0;">
+                            <span class="topIcons">
+                                <div class="icon">1</div>
+                                <div class="topIconText">tree</div>
+                            </span>
+                            <span class="topIcons">
+                                <div class="icon">i</div>
+                                <div class="topIconText">messages</div>
+                            </span>
+                            <form class="searchBar">
+                                <input type="text" class="searchInput" placeholder="search" />
+                            </form>
+                            <span class="topIcons">
+                                <div class="icon" id="searchBtn">3</div>
+                            </span>
+
+                            <span class="topProfile" id="profileBtn">
+                                <div class="profilePicture">
+                                    <img src="img/hannah.jpg" />
+                                </div>
+                            </span>
+                            <div class="profileDropDown">
+                                <div id="profileBtn">
                                     <div class="profilePicture">
-                                        <img id="displayPicture" src="img/hannah.jpg" />
+                                        <img src="img/hannah.jpg" />
                                     </div>
-                                </span>
-                                <div class="profileDropDown">
-                                    <div id="viewProfileBtn">
-                                        <div class="profilePicture" id="dropdownDisplayPicture">
-                                            <img src="img/hannah.jpg" />
-                                        </div>
-                                        <div class="profileText">
-                                            <div class="personName" id="usersName">Miss Hannah</div>
-                                            <div class="personEmail" id="usersEmail">hannah@email.com.au</div>
-                                        </div>
-                                        <div class="logout">
-                                            <button type="button" class="logoutBtn">logout</button>
-                                        </div>
+                                    <div class="profileText">
+                                        <div class="personName">Miss Hannah</div>
+                                        <div class="personEmail">hannah@email.com</div>
                                     </div>
+                                </div>
+                                <div class="logout">
+                                    <button type="button" class="logoutBtn">logout</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row margin-t-60 relative">
-                    <div class="large-9 columns main" id="mainContainer"></div>
-                    <div class="large-3 columns sidebar">
-                        <div class="sidebarFixed">  
+                <div class="mainContent">
+                    <div class="row relative">
+                        <div class="large-2 columns sidebar">
                             <ul id="mainMenu">
                                 <li>
                                     <div class="sidebarIcon">1</div>
-                                    <div class="sidebarText">tree</div>
                                 </li>
                                 <li>
                                     <div class="sidebarIcon">i</div>
-                                    <div class="sidebarText">messages</div>
                                 </li>
-                                <li>
-                                    <div class="sidebarIcon">}</div>
-                                    <div class="sidebarText">children</div>
-                                </li>
-                                <li>
+                                 <li>
                                     <div class="sidebarIcon">h</div>
-                                    <div class="sidebarText">images</div>
-                                </li>
-                                <li id="albumsBtn">
-                                    <div class="sidebarIcon">@</div>
-                                    <div class="sidebarText">albums</div>
                                 </li>
                                 <li>
                                     <div class="sidebarIcon">x</div>
-                                    <div class="sidebarText">stories</div>
-                                </li>
-                                <div class="divider"></div>
-                                <li>
-                                    <div class="sidebarIcon">~</div>
-                                    <div class="sidebarText">locations</div>
                                 </li>
                                 <li>
-                                    <div class="sidebarIcon">g</div>
-                                    <div class="sidebarText">help</div>
-                                </li>
+                                    <div class="sidebarIcon">}</div>
+                                </li>   
                             </ul>
                             <ul id="editMenu" style="display:none;">
                                 <li>
@@ -259,6 +238,27 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="large-9 columns main">
+                            <div class="subNav">
+                                <div class="row topLevel">
+                                    <div class="large-2 columns arrowColumn">
+                                        <div class="arrows">
+                                            <div class="arrowLeft">`</div>
+                                            <div class="arrowRight">{</div>
+                                        </div>
+                                    </div>
+                                    <div class="large-8 columns" style="float:left;">
+                                        <div class="pageTitle">Tree</div>
+                                    </div>
+                                </div>
+                                <div class="nav">
+                                    <span>Albums</span>
+                                    <span>Select</span>
+                                </div>
+                            </div>
+                            <div id="mainContainer"></div>
+                        </div>
+                        <div class="large-3 columns tagSidebar" id="tagSidebar"></div>
                     </div>
                 </div>
             </div>
@@ -267,11 +267,6 @@
         <!-- End Main Template -->
         <!-- Albums Page -->
         <div id="albums">
-            <div class="subContainer">
-                <div class="editContainer" id="editAlbums">
-                    <div class="editText">edit</div>
-                </div>
-            </div>
             <div class="album">
                 <div class="imageContainer">
                     <div class="folder1">
@@ -463,6 +458,266 @@
             </div>
         </div>
         <!-- End Staff Profile Page -->
+        <!-- Tree Page -->
+        <div id="tree">
+            <div class="postContainer" id="postBtn">
+                <div class="staffImg">
+                    <img src="img/hannah.jpg" />
+                </div>
+                <div class="post">want to add something to the tree?</div>
+                <div class="plusIcon">?</div>
+            </div>
+            <div class="feedItem">
+                <div class="postedBy">
+                    <div class="postedByImg">
+                        <img src="img/hannah.jpg" />
+                    </div>
+                    <div class="postedByText">
+                        <span class="postMelonText">Miss Hannah</span>
+                        <span>shared a</span>
+                        <span class="postMelonText">photo</span>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="img/feedImg.png" />
+                </div>
+                <div class="postInfo">
+                    <div class="tags">5 TAGS</div>
+                    <div class="time"><span class="bold">Today</span> 11:30am</div>
+                </div>
+                <div class="divider"></div>
+            </div>
+            <div class="feedItem">
+                <div class="postedBy">
+                    <div class="postedByImg">
+                        <img src="img/hannah.jpg" />
+                    </div>
+                    <div class="postedByText">
+                        <span class="postMelonText">Miss Hannah</span>
+                        <span>shared a</span>
+                        <span class="postMelonText">post</span>
+                    </div>
+                </div>
+                <div class="postItem">
+                    <span>Don’t forget to bring any old blankets as it’s Animal Welfare Day this Friday and we are collecting donations. Don’t forget to bring any old blankets as it’s Animal Welfare Day this Friday and we are collecting donations. Don’t forget to bring any old blankets as it’s Animal Welfare Day this Friday and we are collecting donations. Thank you.</span>
+                </div>
+                <div class="postInfo">
+                    <div class="tags">3 TAGS</div>
+                    <div class="time"><span class="bold">Today</span> 1:00pm</div>
+                </div>
+                <div class="divider"></div>
+            </div>
+            <div class="feedItem">
+                <div class="postedBy">
+                    <div class="postedByImg">
+                        <img src="img/hannah.jpg" />
+                    </div>
+                    <div class="postedByText">
+                        <span class="postMelonText">Miss Hannah</span>
+                        <span>shared a</span>
+                        <span class="postMelonText">Learning Story</span>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="img/feedImg.png" />
+                    <div class="storyFeedTitle">Today I painted my family!</div>
+                </div>
+                <div class="postInfo">
+                    <div class="tags">1 TAGS</div>
+                    <div class="tags" style="margin: 0 5px;">|</div>
+                    <div class="tags">4 FEEDBACK</div>
+                    <div class="time"><span class="bold">Yesterday</span> 11:30am</div>
+                </div>
+                <div class="divider"></div>
+            </div>
+            <div class="feedItem">
+                <div class="postedBy">
+                    <div class="postedByImg">
+                        <img src="img/hannah.jpg" />
+                    </div>
+                    <div class="postedByText">
+                        <span class="postMelonText">Miss Hannah</span>
+                        <span>added</span>
+                        <span class="postMelonText">5 photos</span>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="img/feedImg.png" />
+                </div>
+                <div class="moreImages">
+                    <div class="smallThumbnail">
+                        <img src="img/feedImg.png" />
+                    </div>
+                    <div class="smallThumbnail">
+                        <img src="img/feedImg.png" />
+                    </div>
+                    <div class="smallThumbnail">
+                        <img src="img/feedImg.png" />
+                    </div>
+                    <div class="smallThumbnail">
+                        <img src="img/feedImg.png" />
+                    </div>
+                </div>
+                <div class="postInfo">
+                    <div class="tags">1 TAGS</div>
+                    <div class="time"><span class="bold">Yesterday</span> 11:30am</div>
+                </div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <!-- End Tree Page -->
+        <!-- View Post Page -->
+        <div id="viewPost">
+            <div class="closePostContainer">
+                <div class="postInfoContainer">
+                    <div class="profilePicture">
+                        <img src="img/hannah.jpg" />
+                    </div>
+                    <div class="postInfo">
+                        <div class="text"><span class="postMelonText">Miss Hannah</span> shared a<span class="postMelonText"> photo</span> with<span class="postMelonText"> Charlotte Smith</span></div>
+                        <div class="time">Today 11:30am</div>
+                    </div>
+                </div>
+                <div class="closeContainer" id="closePostBtn">
+                    <div class="closePostBtn">t</div>
+                </div>
+            </div>
+            <div class="viewPostContainer"></div>
+        </div>
+        <!-- End View Post Page -->
+        <!-- All Images -->
+        <div id="images">
+              <div class="subContainer">
+                  <div class="editContainer" id="selectImages">
+                      <div class="selectText">select</div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_03.jpg" />
+                      </div>
+                      <!-- Image Tag Overlay -->
+                      <div class="imageTagOverlay">
+                        <div class="imageTagIcon">u</div>
+                        <div id="singleImgTag" class="imageTags">3 TAGS</div>
+                        <div class="warningIcon">v</div>
+                      </div>
+                      <!-- End Image Tag Overlay -->
+                      <!-- Favourited Image -->
+                      <div class="favouriteImage">
+                        <div class="heartIcon">d</div>
+                      </div>
+                      <!-- End Favourited Image -->
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_06.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_09.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_12.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_15.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_18.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_21.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_24.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_03.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_06.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_09.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_12.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_15.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_18.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_21.jpg" />
+                      </div>
+                  </div>
+              </div>
+              <div class="image">
+                  <div class="imageContainer">
+                      <div class="mainImage">
+                          <img src="img/classroomThumbs/thumb_IMG_24.jpg" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- End All Images -->
 
 
 

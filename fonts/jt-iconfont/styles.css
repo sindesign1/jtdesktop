@@ -158,3 +158,15 @@
 .icon-jt-icon-addphotogrid:before {
   content: "r";
 }
+.icon-jt-icon-alarm:before {
+  content: "s";
+}
+.icon-jt-icon-close-thin:before {
+  content: "t";
+}
+.icon-jt-icon-tag-full:before {
+  content: "u";
+}
+.icon-jt-icon-warning:before {
+  content: "v";
+}

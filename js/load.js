@@ -14,6 +14,10 @@ var Load = {
 		$('body').on('click touch', '.accordionList', Load.mainTemplate);
 		$('body').on('click touch', '#albumsBtn', Load.albums);
 		$('body').on('click touch', '#viewProfileBtn', Load.staffProfile);
+		$('body').on('click touch', '#treeBtn, #topTreeBtn', Load.tree);
+		$('body').on('click touch', '.feedItem', Load.viewPost);
+		$('body').on('click touch', '#imagesBtn', Load.allImages);
+		$(document).ajaxStop(Load.ajaxStop);
 	},
 
 	melonBackground: function() {
@@ -62,7 +66,9 @@ var Load = {
 	mainTemplate: function() {
 		Load.greyBackground();
 		// Load.getUserDetails();
-		$('#loadContainer').load('components.html #mainTemplate');
+		$('#loadContainer').load('components.html #mainTemplate', function(){
+			Load.tree();
+		});
 	},
 
 	albumModals: function() {
@@ -70,7 +76,6 @@ var Load = {
 	},
 
 	albums: function() {
-		console.log('clicked!');
 		Load.albumModals();
 		Effects.removeMenuClass();
 		$('#mainContainer').load('components.html #albums');
@@ -87,6 +92,28 @@ var Load = {
 	staffProfileModals: function() {
 		$('#modals').load('components.html #staffProfileModals');
 	},
+
+	tree: function() {
+		Effects.removeMenuClass();
+		$('#mainContainer').load('components.html #tree');
+		$('#treeBtn').addClass('melonColour');
+		// Tree.numberOfMoreImages();
+		$('#headerTitle').text('Classroom Name');
+	},
+
+	viewPost: function() {
+		$('#mainContainer').load('components.html #viewPost');
+	},
+
+	allImages: function() {
+		Effects.removeMenuClass();
+		$('#mainContainer').load('components.html #images');
+		$('#imagesBtn').addClass('melonColour');
+	},
+
+	ajaxStop: function() {
+		Tree.numberOfMoreImages();
+	}
 
 	// getUserDetails: function() {
 	// 	console.log('ajax function got called');
@@ -110,6 +137,10 @@ var Load = {
 	// 	});
 	// }
 }
+
+// $(document).ajaxStop(function(){
+// 	Tree.numberOfMoreImages();
+// });
 
 $(document).ready(function() {
 	Load.init();

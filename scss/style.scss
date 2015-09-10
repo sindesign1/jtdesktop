@@ -143,6 +143,7 @@ h6 {
     -o-filter: blur(3px);
     -ms-filter: blur(3px);
     filter: blur(3px);
+    overflow: auto;
 }
 
 .melonColour {
@@ -157,7 +158,9 @@ h6 {
 	width: 59% !important;
 }
 
-.width
+.padding-left-0 {
+	padding-left: 0px;
+}
 
 ul {
 	margin: 0;
@@ -206,7 +209,7 @@ ul {
 }
 
 .greyBackground {
-	background: #f8f8f8;
+	background: #e4e3e3;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -600,6 +603,11 @@ ul {
 			font-weight: normal;
 		}
 
+		.alarm {
+			font-size: 30px;
+			margin-top: -3px;
+		}
+
 		.topIconText {
 			font-size: 14px;
 			display: none;
@@ -731,22 +739,103 @@ ul {
 	}
 }
 
+.row {
+	max-width: 1200px;
+}
+
+#mainTemplate {
+	margin-top: 42px;
+}
+
+.mainContent {
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
 .main, .sidebar {
 	background: $white;
-	height: auto;
+	height: 100vh;
 }
 
 .main {
-	width: 72%;
-	padding: 0px;
+	width: 75%;
+	padding: 0;
+	overflow: auto;
+}
+
+#mainContainer {
+	padding: 20px 40px;
+	margin-top: 121px;
+}
+
+.subNav {
+	padding: 20px 40px;
+	position: fixed;
+	z-index: 2;
+	top: 42px;
+	background: $white;
+	width: 900px;
+
+	.topLevel {
+		border-bottom: 1px solid $grey200;
+		padding-bottom: 8px;
+		margin: 0 0 14px 0;
+
+		.arrowColumn {
+			padding: 0;
+			text-align: left;
+		}
+
+		.arrows {
+			display: inline-block;
+			vertical-align: middle;
+			font-family: $iconfont;
+
+			.arrowLeft, .arrowRight {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 23px;
+				color: $grey200;
+			}
+		}
+
+		.pageTitle {
+			display: inline-block;
+			vertical-align: middle;
+			font-family: $museo;
+			color: $melon;
+			font-weight: lighter;
+			font-size: 20px;
+		}
+	}
+
+	.nav {
+
+		span {
+			padding: 0 20px;
+			border-right: 1px solid $grey160;
+			color: $grey160;
+			font-weight: lighter;
+			font-size: 14px;
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+}
+
+.tagSidebar {
+	background: #f1f1f1;
+	height: 100vh;
+	width: 250px;
 }
 
 .sidebar {
-	height: auto;
 	padding: 0;
-	position: absolute;
-	right: 0;
-	width: 250px;
+	width: 50px;
+	background: #f6f6f6;
 
 	.sidebarFixed {
 		position: fixed;
@@ -795,20 +884,24 @@ ul {
 	}
 
 	ul {
-		text-align: left;
+		text-align: center;
 		list-style: none;
-		padding: 10px;
 
 		li {
-			padding: 10px;
-			color: $grey160;
+			padding: 12px 10px 5px 10px;
+			color: $grey200;
 			cursor: pointer;
 			-webkit-transition: color 200ms ease-out 200ms;
 		    -moz-transition: color 200ms ease-out 200ms;
 		    -o-transition: color 200ms ease-out 200ms;
 		    transition: color 200ms ease-out 200ms;
+		    border-bottom: 1px solid $grey200;
 
 			&:hover {
+				color: $melon;
+			}
+
+			&:active {
 				color: $melon;
 			}
 		}
@@ -818,8 +911,7 @@ ul {
 		display: inline-block;
 		vertical-align: middle;
 		font-family: $iconfont;
-		width: 30px;
-		font-size: 20px;
+		font-size: 25px;
 		
 	}
 
@@ -844,7 +936,7 @@ ul {
 	padding: 10px;
 	text-align: right;
 
-	.editText {
+	.editText, .selectText {
 		color: #999999;
 		display: inline-block;
 		vertical-align: middle;
@@ -853,11 +945,11 @@ ul {
 	}
 }
 
-#albums {
+#albums, #images {
 
 	padding-bottom: 20px;
 
-	.album {
+	.album, .image {
 		display: inline-block;
 		vertical-align: top;
 		height: 150px;
@@ -877,6 +969,80 @@ ul {
 		}
 	}
 
+	.image {
+		margin-top: 20px;
+		margin-bottom: 0px;
+
+		.mainImage {
+			border: none;
+
+			img {
+				z-index: 99;
+			}
+		}
+	}
+
+	.imageTagOverlay {
+		background: rgba(0,0,0,0.5);
+		z-index: 9;
+		color: #fff;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		font-weight: lighter;
+		text-align: left;
+		padding: 0 10px;
+
+		.imageTagIcon, .warningIcon {
+			font-family: $iconfont;
+			display: inline-block;
+			vertical-align: middle;
+			cursor: pointer;
+		}
+
+		.warningIcon {
+			float: right;
+			font-size: 18px;
+			color: #ef6259;
+
+		}
+
+		.imageTags {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 2px;
+			cursor: pointer;
+		}
+	}
+
+	.singleImage {
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.imageInfo {
+		background: #fadad9;
+		color: $melon;
+		font-size: 14px;
+		padding: 5px 10px;
+	}
+
+	.favouriteImage {
+		position: absolute;
+		z-index: 9;
+		right: 6px;
+
+		.heartIcon {
+			font-family: $iconfont;
+			color: #ef6259;
+			font-size: 22px;
+		}
+	}
+
 	.imageContainer {
 		position: relative;
 		width: 150px;
@@ -886,7 +1052,6 @@ ul {
 	.folder1 {
 		width: 110px;
 		height: 110px;
-		background: lightgreen;
 		position: absolute;
 		top: -15px;
 		left: 20px;
@@ -896,7 +1061,6 @@ ul {
 	.folder2 {
 		width: 130px;
 		height: 130px;
-		background: yellow;
 		position: absolute;
 		top: -8px;
 		left: 10px;
@@ -907,7 +1071,6 @@ ul {
 	.mainImage {
 		height: 150px;
 		width: 150px;
-		background: pink;
 		z-index: 9;
 		border: 1px solid #ccc;
 		position: absolute;
@@ -1247,7 +1410,6 @@ ul {
 }
 
 #tree {
-	padding: 40px;
 	text-align: left;
 
 	.postContainer {
@@ -1316,11 +1478,6 @@ ul {
 		display: inline-block;
 		vertical-align: middle;
 		font-size: 14px;
-
-		.postMelonText {
-			color: $melon;
-			font-weight: 500;
-		}
 	}
 
 	.thumbnail {
@@ -1400,6 +1557,104 @@ ul {
 	    top: 9px;
 	    left: 50%;
 	    margin-left: -29px;
+	}
+}
+
+.postMelonText {
+	color: $melon;
+	font-weight: 500;
+}
+
+#viewPost {
+	text-align: left;
+
+	.closePostContainer {
+		text-align: left;
+		padding: 0 10px;
+		color: $grey200;
+
+		.closePostBtn {
+			font-family: $iconfont;
+			font-size: 45px;
+			cursor: pointer;
+		}
+	}
+
+	.postInfoContainer {
+		display: inline-block;
+		vertical-align: middle;
+		font-weight: lighter;
+		font-family: $myriad;
+		color: $grey120;
+		font-size: 14px;
+		margin-top: 12px;
+	}
+
+	.closeContainer {
+		display: inline-block;
+		vertical-align: middle;
+		float: right;
+	}
+
+	.viewPostContainer {
+		padding: 10px 40px;
+	}
+
+	.profilePicture {
+		display: inline-block;
+		vertical-align: middle;
+		width: 40px;
+		border: 2px solid $melon;
+		border-radius: 40px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 40px;
+		}
+	}
+
+	.postInfo {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+
+	.itemTags {
+		text-align: left;
+		color: $grey120;
+		font-weight: lighter;
+		margin-top: 15px;
+
+		.tagIcon {
+			font-family:  $iconfont;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 20px;
+			margin-right: 5px;
+			color: $grey200;
+		}
+
+		.tagText {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+}
+
+#images {
+	.selected {
+
+		z-index: 1;
+
+		&:before {
+			content: "";
+			width: 150px;
+			height: 150px;
+			position: absolute;
+			background: rgba(241,99,88,0.6);
+			z-index: 1;
+		}
 	}
 }
 
